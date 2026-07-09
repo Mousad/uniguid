@@ -140,7 +140,7 @@ export function HomePage() {
        <UniversitiesSlider />
        
        
-<section className="py-10 bg-[#f8fafc]">
+<section className="py-10 bg-[#fefcfd]">
   <div className="max-w-6xl mx-auto px-4">
 
     {/* العنوان */}
@@ -183,7 +183,7 @@ export function HomePage() {
 
           <Link
             to="/about"
-            className="inline-flex items-center gap-2 bg-[#154734] hover:bg-white hover:text-[#154734] text-white font-bold px-4 py-1 rounded-{12px} transition-all duration-300 shadow-lg"
+            className="inline-flex items-center gap-2 bg-[#2f3b69] hover:bg-white hover:text-[#154734] text-white font-bold px-4 py-1 rounded-{12px} transition-all duration-300 shadow-lg"
           >
              عنا
             <span>→</span>
@@ -197,43 +197,6 @@ export function HomePage() {
   </div>
 </section>
 
-<section className="py-6 flex justify-center bg-[#fefcfd]">
-  <div className="relative w-[330px] h-[220px] rounded-3xl overflow-hidden shadow-xl">
-
-    {/* الصورة */}
-    <img
-      src="https://i.pinimg.com/736x/58/cb/bb/58cbbb978738541186bd85e374ece2fb.jpg"
-      alt="الدراسة في الصين"
-      className="w-full h-full object-cover"
-    />
-
-    {/* طبقة تغميق */}
-    <div className="absolute inset-0 bg-black/40"></div>
-
-    {/* النص في وسط الصورة */}
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-
-      <h2 className="text-3xl font-bold text-white mb-3">
-        الدراسة في الصين
-      </h2>
-
-      <p className="text-sm text-gray-200 mb-6">
-        منصة ريتال تساعدك على اختيار أفضل الجامعات والمنح الدراسية في الصين
-        لتضمن مستقبلاً تعليمياً مشرقاً.
-      </p>
-
-      {/* الزر */}
-      <Link
-        to="/study-china"
-        className="bg-[#154734] hover:bg-[#0f3a2a] text-white px-6 py-2 rounded-full transition"
-      >
-        قدم
-      </Link>
-
-    </div>
-
-  </div>
-       </section>
 
 
 
@@ -241,7 +204,7 @@ export function HomePage() {
       <WhyTrueUniv />
 
       
-<section className="py-10 bg-white">
+<section className="py-10 bg-[#fefcfd]">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="relative overflow-hidden rounded-[10px] shadow-xl">
@@ -272,9 +235,9 @@ export function HomePage() {
 
           <Link
             to="/scholarship-application"
-            className="inline-flex items-center bg-[#154734] hover:bg-[#0d2b5e] text-white px-4 py-2 rounded-xl font-semibold transition duration-300"
+            className="inline-flex items-center bg-[#2f3b69]  text-white px-4 py-2 rounded-[4px] font-semibold transition duration-300"
           >
-            ابدأ الآن
+            ابدأ 
             <span className="mr-2">←</span>
           </Link>
 
@@ -287,7 +250,7 @@ export function HomePage() {
 </section>
       
       <ChatBot />
-      {/* <AboutSection /> */}
+      <AboutSection />
    
       <ConsultationCTA />
       {/* <TeamSection /> */}

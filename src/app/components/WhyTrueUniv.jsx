@@ -57,12 +57,12 @@ export default function WhyTrueUniv() {
               رحلة UniGuide
             </h2>
 
-            <div className="w-24 h-1 bg-[#154734] mt-3 rounded-full"></div>
+            <div className="w-24 h-1 bg-[#2f3b69] mt-3 rounded-full"></div>
           </div>
 
           <Link
             to="/about"
-            className="text-[#154734] font-bold hover:underline"
+            className="text-[#2f3b69] font-bold hover:underline"
           >
              المزيد →
           </Link>
@@ -82,7 +82,7 @@ export default function WhyTrueUniv() {
                 <div
                   className={`w-5 h-5 rounded-full border-4 transition-all duration-300 ${
                     activeStory === index
-                      ? "bg-[#154734] border-[#154734]"
+                      ? "bg-[#2f3b69] border-[#2f3b69]"
                       : "bg-white border-gray-400"
                   }`}
                 />

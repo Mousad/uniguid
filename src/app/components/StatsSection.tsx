@@ -51,9 +51,9 @@ function StatCard({ stat, index, inView }: { stat: typeof stats[0]; index: numbe
 
   return (
     <div
-      className="flex flex-col items-center text-center p-1 rounded-[9px] bg-[#f2f9f5] shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+      className="flex flex-col items-center text-center p-1 rounded-[9px] bg-[#fefcfd] shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
       style={{
-        border: "1px solid #f2f9f5",
+        border: "1px solid #2f3b69",
         animationDelay: `${index * 150}ms`,
       }}
     >

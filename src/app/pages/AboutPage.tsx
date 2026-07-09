@@ -8,6 +8,8 @@ import EgyptMap from "../components/EgyptMap";
 import { ContactSection } from "../components/ContactSection";
 import hero from "/src/app/pilden/hero.jpg";
 import documVideo from "/src/app/pilden/docum.mp4";
+
+
 import WhyTrueUniv from "../components/WhyTrueUniv";
 import TimelineSection from "../components/TimelineSection"
 export default function AboutPage() {
@@ -43,6 +45,8 @@ export default function AboutPage() {
       </header>
 
             <WhyTrueUniv />
+            
+
       
       <section className="container mx-auto px-4 py-6 bg-[#f2f9f5]">
   
@@ -220,6 +224,7 @@ export default function AboutPage() {
       </section>
 
       <ContactSection />
+       <TeamSection />
 
       
 

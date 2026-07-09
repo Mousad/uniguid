@@ -215,7 +215,7 @@ export default function UniversitiesSlider() {
     <div className="flex justify-center mt-8">
       <Link
         to={`/universities/${universities[activeIndex].id}`}
-        className="bg-[#154734] text-white px-8 py-3 rounded-full hover:bg-[#0d2b5e] transition"
+        className="bg-[#2f3b69] text-white px-8 py-3 rounded-[10px] hover:bg-[#154734] transition"
       >
         المزيد
       </Link>
