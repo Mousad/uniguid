@@ -93,7 +93,7 @@ export function ServicesPage() {
 
   {/* Background Image */}
   <img
-    src="https://uniguid.vercel.app/assets/hero-4q3VJAj9.jpg"
+    src="https://i.pinimg.com/736x/1d/68/04/1d68041835324a83583595071e6eb95c.jpg"
     alt="UniGuide Hero"
     className="absolute inset-0 w-full h-full object-cover"
   />
