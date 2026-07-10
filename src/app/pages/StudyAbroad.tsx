@@ -7,11 +7,11 @@ export default function StudyAbroad() {
 
       {/* Hero */}
       <section className="relative h-[350px] md:h-[500px]">
-        <img
-          src="https://i.pinimg.com/736x/1d/68/04/1d68041835324a83583595071e6eb95c.jpg"
-          alt="Study Abroad"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+     <img
+  src="https://i.pinimg.com/736x/1d/68/04/1d68041835324a83583595071e6eb95c.jpg"
+  alt="Study Abroad"
+  className="absolute inset-0 w-full h-full object-cover"
+/>
 
         <div className="absolute inset-0 bg-black/60" />
 
