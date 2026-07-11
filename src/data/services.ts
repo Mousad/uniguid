@@ -20,18 +20,18 @@ export const services = [
   link: "/study-abroad",
 },
 
-  {
-    id: 2,
-    title: "الامتياز الطبي",
-    description:
-      "التقديم لبرامج الامتياز الطبي والدراسات العليا للأطباء داخل أفضل الجامعات.",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-    icon: Stethoscope,
-    color: "bg-blue-700",
-    button: "اعرف المزيد",
-    link: "/services/medical",
-  },
+ {
+  id: 2,
+  title: "الامتياز الطبي",
+  description:
+    "التقديم لبرامج الامتياز الطبي والدراسات العليا للأطباء داخل أفضل الجامعات.",
+  image:
+    "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
+  icon: Stethoscope,
+  color: "bg-blue-700",
+  button: "اعرف المزيد",
+  link: "/services/medical",
+},
 
   {
     id: 3,

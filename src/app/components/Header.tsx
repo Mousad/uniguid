@@ -26,7 +26,7 @@ export function Header() {
       to: "/services",
       dropdown: [
         { label: "خدماتنا", to: "/services" },
-        { label: " منح", to: "/services/scholarships" },
+       { label: "المنح الدراسية", to: "/scholarship-application" },
        { label: "تقديم", to: "/scholarship-application" },
         { label: "استخرج شهادات ", to: "/services/certificate-services" },
       ],

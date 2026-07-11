@@ -8,12 +8,12 @@ export default function StudyAbroad() {
       {/* Hero */}
       <section className="relative h-[350px] md:h-[500px]">
      <img
-  src="https://i.pinimg.com/736x/1d/68/04/1d68041835324a83583595071e6eb95c.jpg"
+  src="https://i.pinimg.com/1200x/49/86/17/498617f1e57202e95c7585ee3eef2931.jpg"
   alt="Study Abroad"
   className="absolute inset-0 w-full h-full object-cover"
 />
 
-   
+    <div className="absolute inset-0 bg-black/55"></div>
 
         <div className="relative h-full flex flex-col justify-center items-center text-center text-white px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-5">
