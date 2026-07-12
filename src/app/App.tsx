@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import CertificateEquivalencyPage from "./pages/CertificateEquivalencyPage";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -46,6 +46,10 @@ export default function App() {
         <Route
   path="/services/medical"
   element={<MedicalInternshipPage />}
+/>
+<Route
+  path="/services/equivalency"
+  element={<CertificateEquivalencyPage />}
 />
 
         <Route

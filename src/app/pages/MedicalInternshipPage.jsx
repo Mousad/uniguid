@@ -8,6 +8,10 @@ import {
   FileCheck,
   CheckCircle,
   Stethoscope,
+    
+  
+  BookOpen,
+  Microscope,
 } from "lucide-react";
 
 export default function MedicalInternshipPage() {
@@ -21,27 +25,45 @@ export default function MedicalInternshipPage() {
     "شهادة الامتياز (إن وجدت)",
     "شهادة اللغة (إن وجدت)",
   ];
+  const eligibility = [
+  {
+    title: "خريجو كليات الطب",
+    icon: GraduationCap,
+  },
+  {
+    title: "أطباء الامتياز",
+    icon: Stethoscope,
+  },
+  {
+    title: "الراغبون في الماجستير",
+    icon: BookOpen,
+  },
+  {
+    title: "الراغبون في الدكتوراه",
+    icon: Microscope,
+  },
+];
 
   const universities = [
     {
       name: "جامعة القاهرة",
       image:
-        "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GAfT2rnLrvIYYgrKJrvKRQfEFz3tYnyzIXfb8MZquZ3ZNhVXbDilMOk&s=10",
     },
     {
       name: "جامعة عين شمس",
       image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17qp05mPdW9YtKUvzEHV7cyAH7NFsifIH18aBNjwvn55lA570O4jPx-c&s=10",
     },
     {
       name: "جامعة الإسكندرية",
       image:
-        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPytt76a3k91-EZcWdc3F7ycJv6RuLaOrOOxNA0YKohg&s=10",
     },
     {
       name: "جامعة المنصورة",
       image:
-        "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=900",
+        "https://www.nmu.edu.eg/frontend/assets/img/news/5tr49l9IkA5IYLNCPaZmrjA7cQlOETwUWLdh46C8.jpg",
     },
   ];
 const [openFaq, setOpenFaq] = useState(null);  return (
@@ -49,27 +71,25 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
       {/* Hero */}
       <section
-        className="relative h-[520px] bg-cover bg-center flex items-center"
+        className="relative h-[400px] bg-white bg-center flex items-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1600')",
+            "url('https://i.pinimg.com/736x/1d/68/04/1d68041835324a83583595071e6eb95c.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-[#154734]/80"></div>
 
         <div className="container mx-auto px-4 relative z-10 text-white">
 
-          <span className="bg-white/20 px-4 py-2 rounded-full">
-            UniGuide Medical
-          </span>
+         
 
-          <h1 className="text-5xl md:text-6xl font-bold mt-6 leading-tight">
+          <h1 className="text-[26px] md:text-6xl font-bold mt-14 leading-tight">
             الامتياز الطبي
             <br />
             والدراسات العليا
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-9 text-white/90">
+          <p className="mt-3 max-w-2xl text-lg leading-9 text-white/90">
             نساعد الأطباء في التقديم لبرامج الامتياز الطبي
             والدراسات العليا داخل أفضل الجامعات والمستشفيات،
             بدايةً من تجهيز الملف وحتى الحصول على القبول.
@@ -77,25 +97,23 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
           <Link
             to="/scholarship-application?service=medical"
-            className="inline-flex items-center gap-3 mt-10 bg-white text-[#154734] px-8 py-4 rounded-2xl font-bold hover:scale-105 transition"
+            className="inline-flex items-center gap-3 mt-7 bg-white text-[#154734] px-10 py-2 rounded-[10px] font-bold hover:scale-105 transition"
           >
-            ابدأ التقديم الآن
+            ابدأ التقديم 
             <ArrowRight size={20} />
           </Link>
 
         </div>
       </section>
             {/* نبذة عن الخدمة */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto p-3 bg-white py-8">
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
           <div>
-            <span className="text-[#154734] font-semibold">
-              Medical Internship
-            </span>
+          
 
-            <h2 className="text-4xl font-bold text-[#0d2b5e] mt-3 mb-6">
+            <h2 className="text-[26px] font-bold text-[#0d2b5e] mt-3 mb-3">
               ما هو برنامج الامتياز الطبي؟
             </h2>
 
@@ -110,9 +128,9 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1200"
+              src="https://i.pinimg.com/1200x/e7/04/92/e70492c4a30340d0431b7fa459343645.jpg"
               alt="Medical"
-              className="rounded-3xl shadow-xl"
+              className="rounded-[6px] shadow-xl"
             />
           </div>
 
@@ -122,11 +140,11 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
 
       {/* لماذا UniGuide */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-8">
 
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2">
 
-          <div className="text-center mb-14">
+          <div className="text-center mb-10">
 
             <span className="text-[#154734] font-semibold">
               لماذا نحن؟
@@ -138,16 +156,16 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-4 gap-4">
 
-            <div className="bg-gray-50 rounded-3xl p-8 text-center shadow hover:shadow-xl transition">
+            <div className="bg-gray-50 rounded-[9px] p-4 text-center shadow hover:shadow-xl transition">
 
               <Hospital
-                size={45}
-                className="mx-auto text-[#154734] mb-5"
+                size={35}
+                className="mx-auto text-[#154734] mb-3"
               />
 
-              <h3 className="font-bold text-xl mb-3">
+              <h3 className="font-bold text-[18px] mb-3">
                 جامعات معتمدة
               </h3>
 
@@ -157,14 +175,14 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
             </div>
 
-            <div className="bg-gray-50 rounded-3xl p-8 text-center shadow hover:shadow-xl transition">
+            <div className="bg-gray-50 rounded-3xl p-4 text-center shadow hover:shadow-xl transition">
 
               <FileCheck
-                size={45}
-                className="mx-auto text-[#154734] mb-5"
+                size={35}
+                className="mx-auto text-[#154734] mb-3"
               />
 
-              <h3 className="font-bold text-xl mb-3">
+              <h3 className="font-bold text-[18px]  mb-3">
                 تجهيز الملف
               </h3>
 
@@ -174,14 +192,14 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
             </div>
 
-            <div className="bg-gray-50 rounded-3xl p-8 text-center shadow hover:shadow-xl transition">
+            <div className="bg-gray-50 rounded-3xl p-4 text-center shadow hover:shadow-xl transition">
 
               <GraduationCap
-                size={45}
-                className="mx-auto text-[#154734] mb-5"
+                size={35}
+                className="mx-auto text-[#154734] mb-3"
               />
 
-              <h3 className="font-bold text-xl mb-3">
+              <h3 className="font-bold text-[18px]  mb-3">
                 قبول أسرع
               </h3>
 
@@ -191,14 +209,14 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
             </div>
 
-            <div className="bg-gray-50 rounded-3xl p-8 text-center shadow hover:shadow-xl transition">
+            <div className="bg-gray-50 rounded-3xl p-4 text-center shadow hover:shadow-xl transition">
 
               <CheckCircle
-                size={45}
-                className="mx-auto text-[#154734] mb-5"
+                size={35}
+                className="mx-auto text-[#154734] mb-3"
               />
 
-              <h3 className="font-bold text-xl mb-3">
+              <h3 className="font-bold text-[18px]  mb-3">
                 دعم كامل
               </h3>
 
@@ -214,78 +232,113 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
       </section>
             {/* من يمكنه التقديم */}
-      <section className="container mx-auto px-4 py-20">
+    {/* من يمكنه التقديم */}
+<section className="container mx-auto px-3 py-8 bg-white">
 
-        <div className="text-center mb-14">
+  <div className="text-center mb-6">
 
-          <span className="text-[#154734] font-semibold">
-            Eligibility
-          </span>
+    <h2 className="text-4xl font-bold mt-1">
+      من يمكنه التقديم؟
+    </h2>
 
-          <h2 className="text-4xl font-bold mt-3">
-            من يمكنه التقديم؟
-          </h2>
+    <p className="text-gray-600 mt-4">
+      البرامج متاحة للفئات التالية
+    </p>
+
+  </div>
+
+  {eligibility.map((item, index) => (
+
+    <div
+      key={item.title}
+      className={`flex ${
+        index % 2 === 0
+          ? "justify-start"
+          : "justify-end"
+      } mb-8`}
+    >
+
+      <div
+        className={`group bg-white rounded-[3px] border border-gray-200
+        shadow-md hover:shadow-2xl transition-all duration-300
+        hover:-translate-y-1
+        w-full md:w-[75%] lg:w-[70%]
+        flex items-center gap-2 p-3
+        ${
+          index % 2 !== 0
+            ? "flex-row-reverse"
+            : ""
+        }`}
+      >
+
+        {/* Icon */}
+
+        <div
+          className="w-13 h-13 rounded-[4px]
+          border-2 border-[#154734]
+          bg-[#f3faf7]
+          flex items-center justify-center
+          flex-shrink-0
+          group-hover:bg-[#154734]
+          transition"
+        >
+
+          <item.icon
+            size={30}
+            strokeWidth={2.2}
+            className="text-[#154734] group-hover:text-white transition"
+          />
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Content */}
 
-          {[
-            "خريجو كليات الطب",
-            "أطباء الامتياز",
-            "الراغبون في الماجستير",
-            "الراغبون في الدكتوراه",
-          ].map((item) => (
+        <div className="flex-1">
 
-            <div
-              key={item}
-              className="bg-white rounded-3xl shadow-lg p-8 text-center hover:-translate-y-2 hover:shadow-2xl transition duration-300"
-            >
+          <h3 className="text-2xl font-bold text-[#0d2b5e] mb-3">
+            {item.title}
+          </h3>
 
-              <div className="w-20 h-20 mx-auto rounded-full bg-[#154734] flex items-center justify-center text-white text-3xl mb-5">
-                👨‍⚕️
-              </div>
-
-              <h3 className="font-bold text-xl text-[#0d2b5e]">
-                {item}
-              </h3>
-
-            </div>
-
-          ))}
+          <p className="text-gray-600 leading-8">
+            {item.description}
+          </p>
 
         </div>
 
-      </section>
+      </div>
+
+    </div>
+
+  ))}
+
+</section>
 
 
       {/* المستندات المطلوبة */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-8">
 
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-3">
 
-          <div className="text-center mb-14">
+          <div className="text-center mb-10">
 
-            <span className="text-[#154734] font-semibold">
-              Documents
-            </span>
+          
 
-            <h2 className="text-4xl font-bold mt-3">
+            <h2 className="text-4xl font-bold mt-2">
               المستندات المطلوبة
             </h2>
 
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
 
             {documents.map((doc) => (
 
               <div
                 key={doc}
-                className="flex items-center gap-4 bg-[#f8fafc] border rounded-2xl p-6 hover:border-[#154734] transition"
+                className="flex items-center gap-4 bg-[#f8fafc] border rounded-[10px] p-3 hover:border-[#154734] transition"
               >
 
-                <div className="w-12 h-12 rounded-full bg-[#154734] flex items-center justify-center text-white font-bold">
+                <div className="w-8 h-8 rounded-full bg-[#154734] flex items-center justify-center text-white font-bold">
                   ✓
                 </div>
 
@@ -305,38 +358,38 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
 
       {/* الجامعات */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-2 py-8 bg-white">
 
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
 
           <span className="text-[#154734] font-semibold">
             Universities
           </span>
 
-          <h2 className="text-4xl font-bold mt-3">
+          <h2 className="text-4xl font-bold mt-2">
             الجامعات المتاحة
           </h2>
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-4 gap-3">
 
           {universities.map((uni) => (
 
             <div
               key={uni.name}
-              className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+              className="bg-white rounded- overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
             >
 
               <img
                 src={uni.image}
                 alt={uni.name}
-                className="h-52 w-full object-cover"
+                className="h-38 w-full object-cover"
               />
 
-              <div className="p-6">
+              <div className="p-2">
 
-                <h3 className="font-bold text-xl text-[#0d2b5e] text-center">
+                <h3 className="font-bold text-[13px] text-[#0d2b5e] text-center">
                   {uni.name}
                 </h3>
 
@@ -350,15 +403,13 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
       </section>
             {/* خطوات التقديم */}
-      <section className="bg-white py-20">
+      <section className=" py-8 bg-white">
 
         <div className="container mx-auto px-4">
 
           <div className="text-center mb-14">
 
-            <span className="text-[#154734] font-semibold">
-              Application Steps
-            </span>
+            
 
             <h2 className="text-4xl font-bold mt-3">
               خطوات التقديم
@@ -366,7 +417,7 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-3 gap-3">
 
             {[
               "إرسال المستندات",
@@ -374,19 +425,19 @@ const [openFaq, setOpenFaq] = useState(null);  return (
               "اختيار الجامعة",
               "التقديم الرسمي",
               "الحصول على القبول",
-              "استخراج التأشيرة والسفر",
+              "استخراج التأشيرة ",
             ].map((step, index) => (
 
               <div
                 key={step}
-                className="bg-[#f8fafc] rounded-3xl p-8 text-center shadow hover:shadow-xl transition"
+                className="bg-[#f8fafc] rounded-[10px] p-5 text-center shadow hover:shadow-xl transition"
               >
 
-                <div className="w-16 h-16 rounded-full bg-[#154734] text-white flex items-center justify-center mx-auto text-2xl font-bold mb-5">
+                <div className="w-7 h-7 rounded-full bg-[#154734] text-white flex items-center justify-center mx-auto text-[15px] font-bold mb-3">
                   {index + 1}
                 </div>
 
-                <h3 className="font-bold text-xl">
+                <h3 className="font-bold text-[14px]">
                   {step}
                 </h3>
 
@@ -403,9 +454,9 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
       {/* الأسئلة الشائعة */}
 
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-2 py-8 bg-white">
 
-        <div className="text-center mb-14">
+        <div className="text-center mb-12">
 
           <h2 className="text-4xl font-bold">
             الأسئلة الشائعة
@@ -436,17 +487,17 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow border overflow-hidden"
+                className=" rounded-[1px]  border overflow-hidden"
               >
 
                 <button
                   onClick={() =>
                     setOpenFaq(isOpen ? null : index)
                   }
-                  className="w-full flex justify-between items-center p-6"
+                  className="w-full flex justify-between items-center p-3"
                 >
 
-                  <h3 className="font-bold text-right">
+                  <h3 className="font-bold text-[17px] text-right">
                     {item.q}
                   </h3>
 
@@ -484,7 +535,7 @@ const [openFaq, setOpenFaq] = useState(null);  return (
       {/* CTA */}
 
       <section
-        className="relative py-28 bg-cover bg-center"
+        className="relative py-8 bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600')",
@@ -495,11 +546,11 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
 
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-[19px] font-bold">
             ابدأ رحلتك الطبية اليوم
           </h2>
 
-          <p className="mt-6 max-w-3xl mx-auto text-lg leading-9">
+          <p className="mt-6 max-w-3xl mx-auto text-[15px] leading-9">
 
             فريق UniGuide جاهز لمساعدتك في التقديم
             والحصول على القبول الجامعي ومتابعة جميع
@@ -509,7 +560,7 @@ const [openFaq, setOpenFaq] = useState(null);  return (
 
           <Link
             to="/scholarship-application?service=medical"
-            className="inline-block mt-10 bg-white text-[#154734] px-10 py-4 rounded-2xl font-bold hover:scale-105 transition"
+            className="inline-block mt-7 bg-white text-[#154734] px-10 py-2 rounded-[10px] font-bold hover:scale-105 transition"
           >
             قدم الآن
           </Link>

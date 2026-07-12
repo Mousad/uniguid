@@ -33,18 +33,18 @@ export const services = [
   link: "/services/medical",
 },
 
-  {
-    id: 3,
-    title: "معادلة الشهادات",
-    description:
-      "خدمات المعادلة المصرية والإماراتية وإنهاء جميع الإجراءات الرسمية بسهولة.",
-    image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
-    icon: FileCheck,
-    color: "bg-amber-500",
-    button: "ابدأ الآن",
-    link: "/services/equivalency",
-  },
+ {
+  id: 5,
+  title: "معادلة الشهادات",
+  description:
+    "خدمات معادلة الشهادات المصرية والإماراتية وإنهاء جميع الإجراءات الرسمية بسهولة.",
+  image:
+    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80",
+  icon: FileCheck,
+  color: "bg-green-700",
+  button: "اعرف المزيد",
+  link: "/services/equivalency",
+},
 
   {
     id: 4,
