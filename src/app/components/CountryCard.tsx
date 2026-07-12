@@ -17,10 +17,10 @@ export default function CountryCard({
   path,
 }: CountryCardProps) {
   return (
-    <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="bg-white rounded-[10px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
 
       {/* Image */}
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-50 overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -55,7 +55,7 @@ export default function CountryCard({
 
           <Link
             to={path}
-            className="flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-5 py-3 rounded-full transition"
+            className="flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-[12px] transition"
           >
             استكشف
             <ArrowLeft size={18} />

@@ -145,11 +145,7 @@ export default function StudyCountry() {
             {item.name}
           </h3>
 
-          <button
-            className="mt-2 bg-[#0d2b5e] text-[12px] text-white px-2 py-1 rounded-[7px]  transition"
-          >
-             المزيد
-          </button>
+         
 
         </div>
 

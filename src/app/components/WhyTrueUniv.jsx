@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../pilden/logo.jpg";
+import baoh from "../pilden/baoh.jpeg";
 const stories = [
   {
     year: "2022",
@@ -107,7 +107,7 @@ export default function WhyTrueUniv() {
         <img
   src={stories[activeStory].image}
   alt={stories[activeStory].title}
-  className="w-full h-[220px] md:h-[280px] lg:h-[220px] rounded-xl shadow-xl object-cover transition-all duration-500"
+  className="w-full h-[280px] md:h-[280px] lg:h-[220px] rounded-xl shadow-xl object-cover transition-all duration-500"
 />
 
           <div>

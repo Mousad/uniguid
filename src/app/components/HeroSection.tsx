@@ -9,21 +9,32 @@ function SearchCard() {
   const [degree, setDegree] = useState("");
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    const value = e.target.value;
-    setDegree(value);
+const handleChange = (e) => {
+  const value = e.target.value;
+  setDegree(value);
 
-    if (value === "scholarship") navigate("/services/scholarships");
-    else if (value === "certificate") navigate("/services/certificateservices");
-    else if (value === "courses") navigate("/services/courses");
-    else if (value === "consultation") navigate("/services/consultation");
-  };
+  if (value === "scholarship") {
+    navigate("/study-abroad");
+  } else if (value === "certificate") {
+    navigate("/services/certificateservices");
+  } else if (value === "courses") {
+    navigate("/services/courses");
+  } else if (value === "consultation") {
+    navigate("/services/consultation");
+  }
+};
 
-  const handleSearch = () => {
-    if (degree === "scholarship") navigate("/scholarships");
-    if (degree === "certificate") navigate("/certificateservices");
-    if (degree === "consultation") navigate("/consultation");
-  };
+const handleSearch = () => {
+  if (degree === "scholarship") {
+    navigate("/study-abroad");
+  } else if (degree === "certificate") {
+    navigate("/services/certificateservices");
+  } else if (degree === "courses") {
+    navigate("/services/courses");
+  } else if (degree === "consultation") {
+    navigate("/services/consultation");
+  }
+};
 
   return (
     <div className="w-full flex justify-center px-9">

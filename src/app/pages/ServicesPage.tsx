@@ -1,6 +1,5 @@
 // ServicesPage.jsx
 import { Link, useNavigate } from "react-router-dom";
-import hero from "../pilden/hero.jpg";
 import { useState } from "react";
 import {
   ArrowRight,
@@ -14,7 +13,6 @@ import {
 
 
 import ServicesCarousel from "../components/ServicesCarousel";
-import serivImg from "../pilden/seriv.png";
 
 const servicces = [
   {
@@ -139,25 +137,8 @@ export function ServicesPage() {
       {/* ===== المؤسسة Section ===== */}
 
       <ServicesCarousel />
-      <section className="py-10 bg-[#fefcfd]">
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-bold text-[#0d2b5e]">
-            الخدمات الرئيسية
-          </h2>
-        </div>
-        <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-2 gap-8">
-          {services.filter(s => s.id <= 4).map((service, idx) => (
-            <div
-              key={idx}
-              className={`relative p-8 rounded-2xl shadow-xl cursor-pointer hover:scale-105 transition-transform ${service.bg} ${service.textColor}`}
-              onClick={() => navigate(service.link)}
-            >
-              <h3 className="text-xl font-bold mb-4 text-[#0d2b5e]">{service.title}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
-      <section className="py-10 relative bg-[#fefcfd] overflow-hidden">
+     
+      <section className="py-10 relative bg-[#f9fafb] overflow-hidden">
         <div className="absolute inset-0 bg opacity-30"></div>
 
         <div className="container mx-auto relative z- px-2">
@@ -194,7 +175,7 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section className="relative pt-32 pb-20 overflow-hidden bg-[#f2f9f5]">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-[#f9fafb]">
         <div className="container mx-auto px-4 text-center">
 
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#154734]/10 border border-[#154734]/20 mb-8">
@@ -215,7 +196,7 @@ export function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-9">
+      <section className="py-9 bg-[#f9fafb]">
         <div className="container mx-auto px-4">
 
           <div className="text-center mb-16">
@@ -258,7 +239,7 @@ export function ServicesPage() {
         </div>
       </section>
       {/* ===== Student Services Section ===== */}
-      <section className="py-20 relative">
+      <section className="py-20 relative bg-[#f9fafb]">
         <div className="container mx-auto px-4">
           <div className="space-y-24">
 
@@ -342,7 +323,7 @@ export function ServicesPage() {
 
 
       {/* ===== General Services Section ===== */}
-      <div className="container mx-auto bg-[#f2f9f5] px-4 py-8">
+      <div className="container mx-auto bg-[#f9fafb] px-4 py-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.filter(s => s.id >= 5 && s.id <= 6).map((service) => (
             <div key={service.id} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">

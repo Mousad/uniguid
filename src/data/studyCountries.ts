@@ -46,7 +46,7 @@ export const studyCountries: Record<string, StudyCountry> = {
     "https://admission.study-in-egypt.gov.eg/static/media/heroImg.ff53e208.png",
 
   overview:
-    "تُعد مصر واحدة من أفضل الوجهات الدراسية في الشرق الأوسط وإفريقيا، حيث تضم جامعات حكومية وخاصة ذات تصنيف عالمي، وتوفر برامج أكاديمية متنوعة في الطب والهندسة وعلوم الحاسب وإدارة الأعمال وغيرها. كما تتميز بانخفاض تكاليف الدراسة والمعيشة مقارنة بالعديد من الدول الأخرى، مما يجعلها خيارًا مثاليًا للطلاب الدوليين.",
+    "تُعد مصر واحدة من أفضل الوجهات الدراسية في الشرق الأوسط وإفريقيا، حيث تضم جامعات حكومية وخاصة ذات تصنيف عالمي، وتوفر برامج أكاديمية متنوعة كما تتميز بانخفاض تكاليف الدراسة والمعيشة مقارنة بالعديد من الدول الأخرى، مما يجعلها خيارًا مثاليًا للطلاب الدوليين.",
 
   whyStudy:
     "توفر مصر جامعات معترف بها عالميًا، وتخصصات أكاديمية متنوعة، وبيئة عربية مناسبة للطلاب، بالإضافة إلى انخفاض تكاليف المعيشة وسهولة استخراج التأشيرة للعديد من الجنسيات، مع وجود فرص تدريب في المستشفيات والشركات الكبرى.",
@@ -199,27 +199,23 @@ export const studyCountries: Record<string, StudyCountry> = {
     {
       name: "جامعة تسينغهوا",
       cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/e/e5/Tsinghua_University_Logo.svg",
+      logo: "https://i.pinimg.com/1200x/d2/ea/84/d2ea84f1e6b31ad27ce1c527bfbc20f4.jpg",
     },
     {
       name: "جامعة بكين",
-      cover: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/1/18/Peking_University_logo.svg",
+      cover: "https://i.pinimg.com/736x/0d/f9/6c/0df96c82854fe1767d601a7f18969d77.jpg",
+      logo: "https://i.pinimg.com/1200x/63/5c/ea/635cea4fcad14d703867284861a0376e.jpg",
     },
-    {
-      name: "جامعة فودان",
-      cover: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/0/08/Fudan_University_Logo.svg",
-    },
+   
     {
       name: "جامعة شنغهاي جياو تونغ",
-      cover: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/2/22/Shanghai_Jiao_Tong_University_logo.svg",
+      cover: "https://i.pinimg.com/736x/4b/52/6d/4b526dc7ab9d069f31c46c494703ee86.jpg",
+      logo: "https://i.pinimg.com/736x/26/78/95/26789578b0df62c214a6e641cc30d219.jpg",
     },
     {
       name: "جامعة تشجيانغ",
-      cover: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/8/8d/Zhejiang_University_logo.svg",
+      cover: "https://i.pinimg.com/1200x/f4/47/03/f44703a28adc7a357245704345c0a0c4.jpg",
+      logo: "https://i.pinimg.com/1200x/84/2b/74/842b74f61f2514f2089252c69e8c5c9d.jpg",
     },
   ],
 
@@ -306,22 +302,22 @@ export const studyCountries: Record<string, StudyCountry> = {
     {
       name: "جامعة إسطنبول",
       cover: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Istanbul_University_logo.svg",
+      logo: "https://i.pinimg.com/1200x/63/5c/ea/635cea4fcad14d703867284861a0376e.jpg",
     },
     {
       name: "جامعة أنقرة",
-      cover: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/5/5d/Ankara_University_logo.svg",
+      cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSZswL-z-4OGOMqn23J3mZZhOLXgU7Q38ZnQ0Z_sh_axp7Ox1FirvrDGE&s=10",
+      logo: "https://imtiyaz-cms-media-eu.s3.eu-central-1.amazonaws.com/Ankara_Ueniversity_imtiyaz_92b422d1bf.png",
     },
     {
       name: "جامعة حاجت تبه",
       cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/5/54/Hacettepe_University_logo.svg",
+      logo: "https://i.pinimg.com/736x/4a/f6/ef/4af6efb62440c7a655f9607707546a06.jpg",
     },
     {
       name: "جامعة الشرق الأوسط التقنية",
-      cover: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800",
-      logo: "https://upload.wikimedia.org/wikipedia/en/0/06/METU_logo.svg",
+      cover: "https://i.pinimg.com/736x/fb/7d/e2/fb7de27208d00f016ed6f8a2a1005c85.jpg",
+      logo: "https://i.pinimg.com/1200x/18/5d/d1/185dd185ff636bbd092f33e14ef7c942.jpg",
     },
   ],
 
@@ -409,28 +405,28 @@ export const studyCountries: Record<string, StudyCountry> = {
       cover:
         "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=900",
       logo:
-        "https://upload.wikimedia.org/wikipedia/commons/3/3e/Moscow_State_University_logo.svg",
+        "https://i.pinimg.com/1200x/84/2b/74/842b74f61f2514f2089252c69e8c5c9d.jpg",
     },
     {
       name: "جامعة سانت بطرسبرغ الحكومية",
       cover:
-        "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5ofaeDLnMId_JVTU-3g4RenjVxZCA8m9guCRJdP4zefovNd-QnciMFY&s=10",
       logo:
-        "https://upload.wikimedia.org/wikipedia/commons/5/58/Coat_of_Arms_of_Saint_Petersburg_State_University.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaCeOvDGn2YyDCUxeHE_cbHnHfh2WoP0sN_7bEN4SRJrgqGuDQt8zTmso&s=10",
     },
     {
       name: "جامعة الصداقة بين الشعوب",
       cover:
         "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/7/73/RUDN_University_logo.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-4Cz-EeY1KJRIzJCDKvbFEY_sB8XHH_7DoavJxUD2f2dH6mYiMgwiy8&s=10",
     },
     {
       name: "جامعة كازان الفيدرالية",
       cover:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpnXkVCXTEyF7cnFiAhAJNQAQN2xh0E-GyRaeeNZXI4zSiFaIMfdrAiY-&s=10",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/e/e0/Kazan_Federal_University_logo.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37BRJezUTcOWkGOLRFoW6domzo0C7-OWMroQtiQjugkWR932kNRWJsok&s=10",
     },
   ],
 
@@ -516,30 +512,30 @@ export const studyCountries: Record<string, StudyCountry> = {
     {
       name: "جامعة دلهي",
       cover:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGTtp5X1eiMGsWgifdLAZF0BhpJqYmOUbEHgU1t_5-SA&s=10",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/8/80/Delhi_University%27s_official_logo.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-9r7AsjMFn22N4QJrnlIzIXqr35aVRWIKU9aGVoefpHt0kFypgIuxeV8&s=10",
     },
     {
       name: "جامعة جواهر لال نهرو",
       cover:
         "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/7/7d/Jawaharlal_Nehru_University_Logo.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFNqOxRkjIjbV5xkO1Q-wYwW9BPJ-HkKnx6XSX5zgHVP0anAVuC0Vt-4&s=10",
     },
     {
       name: "المعهد الهندي للتكنولوجيا IIT Delhi",
       cover:
-        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Main%28Administrative%29Building_IIT-Roorkee.JPG/1280px-Main%28Administrative%29Building_IIT-Roorkee.JPG",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/8/81/IIT_Delhi_Logo.svg",
+        "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/1280px-Indian_Institute_of_Technology_Delhi_Logo.svg.png",
     },
     {
       name: "جامعة مانيبال",
       cover:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6waM4zFYbLi2W-fE8F5ebPdFCJWt6uzcfoViGaBdJC8MXTJ53XE_kH4t&s=10",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/9/99/Manipal_Academy_of_Higher_Education_logo.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ZM4wXqJ6DYbo07TVkDaEXlEZaxbKfJBVtPXFqZVGHytFIYhrwqD-jbU&s=10",
     },
   ],
 
@@ -625,30 +621,30 @@ rwanda: {
     {
       name: "جامعة رواندا",
       cover:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
+        "https://alkhawarizmi.eg/wp-content/uploads/2024/06/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%B1%D9%88%D8%A7%D9%86%D8%AF%D8%A7.jpg",
       logo:
-        "https://upload.wikimedia.org/wikipedia/en/5/53/University_of_Rwanda_logo.png",
+        "https://ar.uni24k.com/media/logos/logo_schools_u44d31bf9_9b98ab1f.jpg",
     },
     {
       name: "جامعة كيغالي المستقلة",
       cover:
-        "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCwrXhz_rPhlTdlyggJp-pI_Adyyr7EjQx-U_0WijsZUt-chGxerhYo-N&s=10",
       logo:
-        "https://upload.wikimedia.org/wikipedia/commons/8/89/University_logo_placeholder.png",
+        "https://ar.uni24k.com/media/logos/logo_schools_ua9751a4a_f6c48b36.jpg",
     },
     {
       name: "جامعة كيغالي",
       cover:
-        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ2q2X2VekgPyZPKHCs3oF3zB_d-N6_mP6rfqXEBEuag828uZ5HgfrX2A&s=100",
       logo:
-        "https://upload.wikimedia.org/wikipedia/commons/8/89/University_logo_placeholder.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1GOg-7KaYKvYkzRgIXoiQ3U_OujmWln80pMixpgQZvcI2-plLQJXFVVoi&s=10",
     },
     {
       name: "معهد كيغالي للعلوم والتكنولوجيا",
       cover:
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqTI92UTz8P4AtxjrB1M-HjkB80Koy9sqzg_HzRqFJ0CBgzBHYtaa_rvaa&s=10",
       logo:
-        "https://upload.wikimedia.org/wikipedia/commons/8/89/University_logo_placeholder.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJLymCT71IIjCqNFpKF1pCRn4DuM9N9Gy4ptrfb3xXg&s",
     },
   ],
 

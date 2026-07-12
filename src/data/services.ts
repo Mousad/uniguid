@@ -61,18 +61,7 @@ export const services = [
 
   
 
-  {
-    id: 5,
-    title: "خدمات الطلاب",
-    description:
-      "كل الخدمات التي يحتاجها الطالب بعد القبول وحتى الاستقرار في بلد الدراسة.",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
-    icon: Plane,
-    color: "bg-purple-700",
-    button: "استكشف ",
-    link: "/services/student-services",
-  },
+  
   {
     id: 5,
     title: " استشارات دراسية",
@@ -84,5 +73,17 @@ export const services = [
     color: "bg-purple-700",
     button: " قدم",
     link: "/services/Consultation",
+  },
+  {
+    id: 5,
+    title: "  كورسات ودورات",
+    description:
+      "كل الخدمات التي يحتاجها الطالب من استشارات تعليمية  تسهل دليل الطالب ويفهم اكتر .",
+    image:
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
+    icon: Plane,
+    color: "bg-purple-700",
+    button: " قدم",
+    link: "/services/Courses",
   },
 ];

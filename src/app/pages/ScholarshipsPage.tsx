@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import UniversitiesSlider from "../components/niversitiesSlider";
 
-import card from "../pilden/card.png";
-import akib from "../pilden/akib.png";
+
+
 
 
 const majors = [

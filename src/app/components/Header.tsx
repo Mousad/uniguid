@@ -26,15 +26,15 @@ export function Header() {
       to: "/services",
       dropdown: [
         { label: "خدماتنا", to: "/services" },
-       { label: "المنح الدراسية", to: "/scholarship-application" },
+     { label: "الدراسة في الخارج", to: "/study-abroad" },
        { label: "تقديم", to: "/scholarship-application" },
-        { label: "استخرج شهادات ", to: "/services/certificate-services" },
+        { label: "استخرج شهادات ", to: "/services/certificateservices" },
       ],
     },
     { label: "الجامعات", to: "/universities/1" },
     { label: "من نحن", to: "/about" },
-    { label: "البرامج", to: "#services" },
-    { label: "مدوناتنا", to: "#testimonials" },
+    
+  
     { label: "تواصل معنا", to: "/ContactSection" },
   ];
 

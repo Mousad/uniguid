@@ -8,7 +8,7 @@ import { TeamSection } from "../components/TeamSection";
 import { TestimonialsSection } from "../components/TestimonialsSection";
 import { BlogSection } from "../components/BlogSection";
 import { ContactSection } from "../components/ContactSection";
-import { CertificateServices } from "../components/CertificateServices";
+import CertificateServices from "../pages/CertificateServices";
 import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom";
 import useEmblaCarousel from "embla-carousel-react";
@@ -44,11 +44,18 @@ const majors = [
   ];
 // خدمات
 const services = [
-  { title: "الدراسة في الخارج", slug: "scholarships" },
-  { title: "استخراج تجهيز الشهادات", slug: "CertificateServices" },
-  { title: "الاستشارات التعليمية", slug: "Consultation" },
-  
-
+  {
+    title: "الدراسة في الخارج",
+    slug: "/study-abroad",
+  },
+  {
+    title: "استخراج الشهادات",
+    slug: "/services/certificateservices",
+  },
+  {
+    title: "الاستشارات التعليمية",
+    slug: "/services/consultation",
+  },
 ];
 
 export function HomePage() {
@@ -91,23 +98,17 @@ export function HomePage() {
 
     {/* الخدمات */}
     <div className="grid md:grid-cols-2 gap-2 w-full">
-      {services.map((service, idx) => (
-        <Link
-          key={idx}
-          to={`/services/${service.slug}`}
-          className="relative group overflow-hidden bg-[#fefcfd] p-3 rounded-xl shadow transition text-[#0d2b5e] font-medium text-center"
-        >
-
-          {/* الخلفية المتحركة */}
-          <span className="absolute inset-0 bg-[#fefcfd] scale-x-0 origin-right transition-transform duration-500 ease-out group-hover:scale-x-100"></span>
-
-          {/* النص */}
-          <span className="relative z-10 group-hover:text-white transition">
-            {service.title}
-          </span>
-
-        </Link>
-      ))}
+     {services.map((service, idx) => (
+  <Link
+  key={idx}
+  to={service.slug}
+  className="relative group overflow-hidden bg-[#fefcfd] p-3 rounded-xl shadow transition text-[#0d2b5e] font-medium text-center"
+>
+  <span className="relative z-10">
+    {service.title}
+  </span>
+</Link>
+))}
     </div>
 
     {/* زر المزيد */}

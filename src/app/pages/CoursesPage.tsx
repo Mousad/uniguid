@@ -5,6 +5,13 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion";
+
 export default function CoursesPage() {
 
   const courses = [
@@ -84,11 +91,11 @@ export default function CoursesPage() {
 
   // التصنيفات
   const categories = [
-    { title: "التصميم",  img: "https://courssat.com/images/design.svg" },
-    { title: "العلوم والتكنولوجيا", img: "	https://courssat.com/images/science.svg" },
-    { title: "التسويق", img: "	https://courssat.com/images/marketing.svg" },
+    { title: "لغة انجليزية",  img: "https://courssat.com/images/design.svg" },
+    { title: " لغة تركية", img: "	https://courssat.com/images/science.svg" },
+    { title: "لغة روسيا", img: "	https://courssat.com/images/marketing.svg" },
 
-    { title: "اللغات", img: "https://courssat.com/images/language.svg" },
+    { title: "لغة هندية", img: "https://courssat.com/images/language.svg" },
   ];
 
   return (
@@ -125,6 +132,8 @@ export default function CoursesPage() {
           </div>
         </div>
       </div>
+
+      
 
       {/* المنحة / النصوص المتغيرة */}
       <div className="relative bg-gradient-to-br from-[#feeaeb]/30 to-[#e9e8ee]/30 backdrop-blur-sm border-y border-primary/10 py-12 overflow-hidden transition-all duration-1000">
@@ -170,24 +179,115 @@ export default function CoursesPage() {
           <div className="lg:w-1/2 w-full flex items-center justify-center">
             <p className="text-gray-700 text-lg leading-relaxed">
               هل تبحث عن فرصة حقيقية لتطوير مهاراتك وفتح أبواب جديدة لمستقبلك؟  
-              منصة <span className="font-bold text-[#154734]">ريتال التعليمية</span> تقدم لك مجموعة مميزة من الكورسات
+              منصة <span className="font-bold text-[#154734]">UniGuide التعليمية</span> تقدم لك مجموعة مميزة من الكورسات
               والدورات التدريبية المصممة خصيصاً لمساعدتك على اكتساب مهارات
               عملية ولغات جديدة تؤهلك للدراسة والعمل في بيئة دولية.
               من خلال محتوى تعليمي حديث وإرشاد أكاديمي متخصص، ستتمكن من
               التعلم بخطوات واضحة تساعدك على تحقيق أهدافك التعليمية
               والمهنية بثقة.
-              لا تضيع الفرصة وابدأ رحلتك التعليمية اليوم مع ريتال 🚀
+              لا تضيع الفرصة وابدأ رحلتك التعليمية اليوم   
             </p>
           </div>
-          <div className="w-full flex items-center justify-center lg:justify-end py-5">
-            <img
-              src="https://unitededucation.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSec1cer.6affd1d8.png&w=640&q=75"
-              alt="certificate"
-              className="w-72"
-            />
-          </div>
+          
         </div>
       </div>
+
+      <section className="py-10 bg-white">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="text-center mb-16">
+
+      <span className="text-[#154734] font-semibold">
+        لماذا UniGuide؟
+      </span>
+
+      <h2 className="text-4xl font-bold mt-3">
+        لماذا تختار كورساتنا؟
+      </h2>
+
+      <p className="text-gray-600 mt-4 max-w-3xl mx-auto leading-8">
+        نقدم دورات تعليمية حديثة تساعدك على تطوير مهاراتك والاستعداد للدراسة
+        والعمل في مختلف دول العالم.
+      </p>
+
+    </div>
+
+    <div className="grid md:grid-cols-2 grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div className="bg-[#f8fafc] rounded-3xl p-5 text-center shadow hover:-translate-y-2 transition">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+          className="w-16 mx-auto mb-5"
+        />
+
+        <h3 className="font-bold text-[16px] mb-1">
+          مدربون محترفون
+        </h3>
+
+        <p className="text-gray-600 leading-7">
+          نخبة من المدربين أصحاب الخبرة  .
+        </p>
+
+      </div>
+
+      <div className="bg-[#f8fafc] rounded-3xl p-5 text-center shadow hover:-translate-y-2 transition">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2784/2784445.png"
+          className="w-16 mx-auto mb-5"
+        />
+
+        <h3 className="font-bold text-[15px] mb-1">
+          شهادات معتمدة
+        </h3>
+
+        <p className="text-gray-600 leading-7">
+          احصل على شهادة بعد إتمام الدورات .
+        </p>
+
+      </div>
+
+      <div className="bg-[#f8fafc] rounded-3xl p-5 text-center shadow hover:-translate-y-2 transition">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png"
+          className="w-16 mx-auto mb-5"
+        />
+
+        <h3 className="font-bold text-[15px] mb-1">
+          تعلم من أي مكان
+        </h3>
+
+        <p className="text-gray-600 leading-7">
+          جميع الدورات متاحة أونلاين ويمكنك التعلم في أي وقت.
+        </p>
+
+      </div>
+
+      <div className="bg-[#f8fafc] rounded-3xl p-5 text-center shadow hover:-translate-y-2 transition">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/4202/4202843.png"
+          className="w-16 mx-auto mb-5"
+        />
+
+        <h3 className="font-bold text-[15px] mb-3">
+          دعم مستمر
+        </h3>
+
+        <p className="text-gray-600 leading-7">
+          نتابع معك خطوة بخطوة حتى تحقق أهدافك التعليمية.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* الفيديوهات */}
        <section className="mb-12 lg:mb-14 container mx-auto px-4">
@@ -208,7 +308,9 @@ export default function CoursesPage() {
           ))}
         </div>
       </section>
-      <div className="container mx-auto px-4 py-16">
+
+      
+      <div className="container mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold text-[#154734] text-center mb-8">الكورسات</h2>
         <div className="grid grid-cols-2 gap-6">
           {videos.map((video) => {
@@ -233,6 +335,164 @@ export default function CoursesPage() {
           })}
         </div>
       </div>
+
+      <section className="py-24 bg-white">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    {/* Header */}
+
+    <div className="text-center mb-16">
+
+      <span className="text-[#154734] font-semibold">
+        خطوات التسجيل
+      </span>
+
+      <h2 className="text-4xl font-bold mt-3">
+        كيف تبدأ رحلتك التعليمية؟
+      </h2>
+
+      <p className="text-gray-600 mt-4 max-w-3xl mx-auto leading-8">
+        ثلاث خطوات بسيطة تفصلك عن بداية التعلم واكتساب المهارات الجديدة.
+      </p>
+
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-10">
+
+      <div className="relative bg-[#f8fafc] rounded-3xl p-10 text-center shadow hover:shadow-xl transition">
+
+        <div className="w-20 h-20 rounded-full bg-[#154734] text-white flex items-center justify-center mx-auto mb-6 text-3xl font-black">
+          1
+        </div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          اختر الكورس
+        </h3>
+
+        <p className="text-gray-600 leading-8">
+          تصفح جميع الكورسات واختر الدورة المناسبة حسب أهدافك ومستواك.
+        </p>
+
+      </div>
+
+      <div className="relative bg-[#f8fafc] rounded-3xl p-10 text-center shadow hover:shadow-xl transition">
+
+        <div className="w-20 h-20 rounded-full bg-[#154734] text-white flex items-center justify-center mx-auto mb-6 text-3xl font-black">
+          2
+        </div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          سجل بياناتك
+        </h3>
+
+        <p className="text-gray-600 leading-8">
+          أكمل نموذج التسجيل وسيقوم فريق UniGuide بالتواصل معك مباشرة.
+        </p>
+
+      </div>
+
+      <div className="relative bg-[#f8fafc] rounded-3xl p-10 text-center shadow hover:shadow-xl transition">
+
+        <div className="w-20 h-20 rounded-full bg-[#154734] text-white flex items-center justify-center mx-auto mb-6 text-3xl font-black">
+          3
+        </div>
+
+        <h3 className="text-2xl font-bold mb-4">
+          ابدأ التعلم
+        </h3>
+
+        <p className="text-gray-600 leading-8">
+          استمتع بالمحتوى التعليمي وابدأ رحلتك نحو تطوير مهاراتك وتحقيق أهدافك.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 bg-white">
+
+  <div className="max-w-5xl mx-auto px-4">
+
+    <div className="text-center mb-16">
+
+      <span className="text-[#154734] font-semibold">
+        الأسئلة الشائعة
+      </span>
+
+      <h2 className="text-4xl font-bold mt-3">
+        لديك استفسار؟
+      </h2>
+
+      <p className="text-gray-600 mt-4 leading-8">
+        إليك أكثر الأسئلة التي يطرحها الطلاب قبل التسجيل في الكورسات.
+      </p>
+
+    </div>
+
+    <Accordion type="single" collapsible className="space-y-5">
+
+      <AccordionItem
+        value="1"
+        className="border rounded-2xl px-6 shadow-sm"
+      >
+        <AccordionTrigger className="text-right text-lg font-bold">
+          هل الكورسات مجانية؟
+        </AccordionTrigger>
+
+        <AccordionContent className="leading-8 text-gray-600">
+          يوجد لدينا كورسات مجانية وأخرى مدفوعة حسب نوع الدورة والمدرب.
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem
+        value="2"
+        className="border rounded-2xl px-6 shadow-sm"
+      >
+        <AccordionTrigger className="text-right text-lg font-bold">
+          هل أحصل على شهادة بعد إنهاء الدورة؟
+        </AccordionTrigger>
+
+        <AccordionContent className="leading-8 text-gray-600">
+          نعم، بعد إكمال الدورة بنجاح تحصل على شهادة إتمام يمكن إضافتها إلى سيرتك الذاتية.
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem
+        value="3"
+        className="border rounded-2xl px-6 shadow-sm"
+      >
+        <AccordionTrigger className="text-right text-lg font-bold">
+          هل أستطيع الدراسة من الهاتف؟
+        </AccordionTrigger>
+
+        <AccordionContent className="leading-8 text-gray-600">
+          نعم، جميع الدورات تعمل على الهاتف والكمبيوتر والأجهزة اللوحية.
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem
+        value="4"
+        className="border rounded-2xl px-6 shadow-sm"
+      >
+        <AccordionTrigger className="text-right text-lg font-bold">
+          كيف يمكنني التسجيل؟
+        </AccordionTrigger>
+
+        <AccordionContent className="leading-8 text-gray-600">
+          اضغط على زر التسجيل أو تواصل معنا عبر واتساب وسيقوم فريق UniGuide بإكمال إجراءات التسجيل معك.
+        </AccordionContent>
+      </AccordionItem>
+
+    </Accordion>
+
+  </div>
+
+</section>
 
       {/* قسم التصنيفات */}
      
