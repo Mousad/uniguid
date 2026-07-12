@@ -63,9 +63,9 @@ export default function ServicesCarousel() {
 
                                 {/* Body */}
 
-                                <div className="pt-8 pb-5 px-2 text-center">
+                                <div className="pt-11 pb-5 px-1  text-center">
 
-                                    <h3 className="font-bold text-lg md:text-2xl mb-3">
+                                    <h3 className="font-bold text-lg md:text-2xl mb-1">
                                         {service.title}
                                     </h3>
 
@@ -75,7 +75,7 @@ export default function ServicesCarousel() {
 
                                     <Link
                                         to={service.link}
-                                        className={`inline-flex items-center justify-center mt-4 px-6 py-2 rounded-[10px] text-white font-semibold transition hover:scale-105 ${service.color}`}
+                                        className={`inline-flex items-center justify-center mt-2 px-3 py-1 rounded-[10px] text-white font-semibold transition hover:scale-105 ${service.color}`}
                                     >
                                         {service.button}
                                     </Link>

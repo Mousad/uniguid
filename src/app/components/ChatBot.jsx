@@ -45,7 +45,7 @@ export default function ChatBot() {
             zIndex: 9999,
           }}
         >
-          <h3 style={{ marginBottom: "20px" }}>  مرحباً بك في ريتال</h3>
+          <h3 style={{ marginBottom: "20px" }}>  مرحباً بك في UniGuide</h3>
 
           <p style={{ fontSize: "14px", marginBottom: "15px" }}>
             كيف يمكنني مساعدتك؟
@@ -70,7 +70,7 @@ export default function ChatBot() {
             </Link>
 
             <a
-              href="https://api.whatsapp.com/send/?phone=905315016019"
+              href="https://api.whatsapp.com/send/?phone=01130378500"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#22275f]"

@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
-import loader from "../pilden/icons/ezgif.com-gif-maker.gif";
 
 export function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +24,7 @@ export function LoadingScreen() {
           className="mx-auto mb-6 w-24"
         />
 
-        <h1 className="text-6xl font-bold text-white">ريتال</h1>
+        <h1 className="text-6xl font-bold text-white">UniGuide</h1>
         <p className="text-blue-100 text-xl">للخدمات التعليمية</p>
 
       </div>

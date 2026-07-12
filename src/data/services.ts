@@ -29,7 +29,7 @@ export const services = [
     "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
   icon: Stethoscope,
   color: "bg-blue-700",
-  button: "اعرف المزيد",
+  button: " المزيد",
   link: "/services/medical",
 },
 
@@ -47,17 +47,19 @@ export const services = [
 },
 
   {
-    id: 4,
-    title: "استخراج الشهادات",
-    description:
-      "استخراج الشهادات الدراسية والتوثيقات الرسمية بسرعة واحترافية.",
-    image:
-      "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&q=80",
-    icon: FileText,
-    color: "bg-red-600",
-    button: "عرض الخدمة",
-    link: "/services/certificates",
-  },
+  id: 4,
+  title: "استخراج الشهادات",
+  description:
+    "استخراج الشهادات الدراسية والتوثيقات الرسمية بسرعة واحترافية.",
+  image:
+    "https://images.unsplash.com/photo-1568667256549-094345857637?w=1200&q=80",
+  icon: FileText,
+  color: "bg-red-600",
+  button: "عرض الخدمة",
+  link: "/services/certificateservices",
+},
+
+  
 
   {
     id: 5,
@@ -68,7 +70,19 @@ export const services = [
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
     icon: Plane,
     color: "bg-purple-700",
-    button: "استكشف الخدمات",
+    button: "استكشف ",
     link: "/services/student-services",
+  },
+  {
+    id: 5,
+    title: " استشارات دراسية",
+    description:
+      "كل الخدمات التي يحتاجها الطالب من استشارات تعليمية  تسهل دليل الطالب ويفهم اكتر .",
+    image:
+      "https://i.pinimg.com/1200x/a2/10/3c/a2103cf163d4e4860b5ed042f0953c04.jpg",
+    icon: Plane,
+    color: "bg-purple-700",
+    button: " قدم",
+    link: "/services/Consultation",
   },
 ];

@@ -20,11 +20,6 @@ import WhyTrueUniv from "../components/WhyTrueUniv";
 
 
 import logo from "../pilden/logo.jpg";
-import akib from "../pilden/akib.png";
-
-    
-
-
 
 const majors = [
     {
@@ -49,7 +44,7 @@ const majors = [
   ];
 // خدمات
 const services = [
-  { title: "التقديم على المنح الدراسية", slug: "scholarships" },
+  { title: "الدراسة في الخارج", slug: "scholarships" },
   { title: "استخراج تجهيز الشهادات", slug: "CertificateServices" },
   { title: "الاستشارات التعليمية", slug: "Consultation" },
   

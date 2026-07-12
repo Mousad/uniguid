@@ -4,7 +4,6 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import MedicalInternshipPage from "./pages/MedicalInternshipPage";
-
 import { HomePage } from "./pages/HomePage";
 import { ServicesPage } from "./pages/ServicesPage";
 import { ScholarshipsPage } from "./pages/ScholarshipsPage";
@@ -13,9 +12,8 @@ import AboutPage from "./pages/AboutPage";
 import { ContactSection } from "./components/ContactSection";
 import UniversityDetail from "./pages/UniversityDetail";
 import ConsultationPage from "./pages/ConsultationPage";
-import CertificateServices from "./pages/CertificateServices";
 import ScholarshipApplication from "./pages/ScholarshipApplication";
-
+import CertificateServices from "./pages/CertificateServices";
 import StudyAbroad from "./pages/StudyAbroad";
 import StudyCountry from "./pages/StudyCountry";
 
@@ -51,6 +49,10 @@ export default function App() {
   path="/services/equivalency"
   element={<CertificateEquivalencyPage />}
 />
+<Route
+  path="/services/certificateservices"
+  element={<CertificateServices />}
+/>
 
         <Route
           path="/services/courses"
@@ -62,10 +64,7 @@ export default function App() {
           element={<ConsultationPage />}
         />
 
-        <Route
-          path="/services/certificateservices"
-          element={<CertificateServices />}
-        />
+       
 
         <Route
           path="/scholarship-application"

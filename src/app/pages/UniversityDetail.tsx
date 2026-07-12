@@ -182,14 +182,7 @@ export default function UniversityDetail() {
     <div className="min-h-screen bg-[#f2f9f5]" id="universities">
 
     {/* سهم الرجوع */}
-      {/* <div className="sticky top-[60px] z-20 px-4 py-2">
-        <Link
-          to="/"
-          className="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-md text-[#154734]"
-        >
-          <ArrowRight className="w-5 h-5" />
-        </Link>
-      </div> */}
+
 
       {/* الهيدر */}
       <div className="relative h-96 w-full">
@@ -302,7 +295,7 @@ export default function UniversityDetail() {
       </section>
        {/* ======= زر واتساب عائم ======= */}
             <a
-              href="https://wa.me/+201117740555"
+              href="https://wa.me/+201130378500"
               target="_blank"
               rel="noopener noreferrer"
               className="fixed bottom-6 right-6 z-50 bg-green-500 text-white px-4 py-4 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition text-xl"

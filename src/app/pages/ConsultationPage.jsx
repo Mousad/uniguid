@@ -116,7 +116,7 @@ export default function CoursesPage() {
 
   return (
     <div className="min-h-screen relative">
-      {/* سهم الخروج ثابت */}
+   
      
 
       <section className="relative overflow-hidden bg-gradient-to-b from-[#f4fbf7] via-white to-white py-24">
@@ -253,7 +253,7 @@ export default function CoursesPage() {
                     </h2>
 
                     <p className="text-gray-500 text-sm mt-2">
-                      سنوات خبرة
+                       خبرة
                     </p>
 
                   </div>
@@ -265,7 +265,7 @@ export default function CoursesPage() {
                     </h2>
 
                     <p className="text-gray-500 text-sm mt-2">
-                      دعم مستمر
+                      دعم 
                     </p>
 
                   </div>
