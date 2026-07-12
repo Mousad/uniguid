@@ -52,19 +52,19 @@ export default function CertificateEquivalencyPage() {
         {
             number: "01",
             title: "إرسال الطلب",
-            desc: "إرسال بياناتك والمستندات المطلوبة.",
+            desc: "إرسال بياناتك  المطلوبة.",
             image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200",
         },
         {
             number: "02",
             title: "مراجعة الملف",
-            desc: "فحص جميع الوثائق والتأكد من اكتمالها.",
+            desc: "فحص جميع الوثائق   .",
             image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200",
         },
         {
             number: "03",
             title: "تجهيز المستندات",
-            desc: "إعداد الملف حسب متطلبات الجهة الرسمية.",
+            desc: "إعداد الملف حسب متطلبات  .",
             image: "https://i.pinimg.com/736x/9a/b7/98/9ab798a2c090c91551baf28ad6258c4d.jpg",
         },
         {
@@ -141,7 +141,7 @@ export default function CertificateEquivalencyPage() {
 
                        
 
-                        <h1 className="text-[33px] md:text-6xl font-black leading-tight mt-8">
+                        <h1 className="text-[28px] md:text-6xl font-black leading-tight mt-8">
 
                             معادلة الشهادات
                             <br />
@@ -149,7 +149,7 @@ export default function CertificateEquivalencyPage() {
 
                         </h1>
 
-                        <p className="mt-8 text-lg leading-9 text-white/90">
+                        <p className="mt-7 text-lg leading-9 text-white/90">
 
                             نوفر خدمات معادلة الشهادات الجامعية والثانوية
                             داخل مصر والإمارات، مع متابعة جميع الإجراءات
@@ -162,14 +162,14 @@ export default function CertificateEquivalencyPage() {
 
                             <Link
                                 to="/scholarship-application?service=equivalency"
-                                className="bg-white text-[#154734] px-8 py-4 rounded-xl font-bold hover:scale-105 transition"
+                                className="bg-white text-[#154734] px-8 py-3 rounded-xl font-bold hover:scale-105 transition"
                             >
                                 ابدأ التقديم
                             </Link>
 
                             <Link
                                 to="/contactSection"
-                                className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-[#154734] transition"
+                                className="border border-white px-8 py-3 rounded-xl hover:bg-white hover:text-[#154734] transition"
                             >
                                 تواصل معنا
                             </Link>
@@ -180,36 +180,36 @@ export default function CertificateEquivalencyPage() {
 
                             <div>
 
-                                <h3 className="text-3xl font-bold">
+                                <h3 className="text-[22px] font-bold">
                                     +500
                                 </h3>
 
                                 <p className="text-white/80">
-                                    ملف ناجح
+                                    ملفات 
                                 </p>
 
                             </div>
 
                             <div>
 
-                                <h3 className="text-3xl font-bold">
+                                <h3 className="text-[22px] font-bold">
                                     2
                                 </h3>
 
                                 <p className="text-white/80">
-                                    دول متاحة
+                                    دول 
                                 </p>
 
                             </div>
 
                             <div>
 
-                                <h3 className="text-3xl font-bold">
+                                <h3 className="text-[22px] font-bold">
                                     100%
                                 </h3>
 
                                 <p className="text-white/80">
-                                    متابعة كاملة
+                                    متابعة 
                                 </p>
 
                             </div>
@@ -234,7 +234,7 @@ export default function CertificateEquivalencyPage() {
                         <img
                             src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80"
                             alt="Certificate Equivalency"
-                            className="rounded-[10px] shadow-2xl w-full h-[370px] object-cover"
+                            className="rounded-[10px] shadow-2xl w-full h-[350px] object-cover"
                         />
 
                         <div className="absolute -bottom-6 -left-3 bg-[#2f3b69] text-white rounded-[9px] p-1 shadow-xl">
@@ -272,7 +272,7 @@ export default function CertificateEquivalencyPage() {
 
 
 
-                        <h2 className="text-4xl font-black mt-2 leading-tight text-[#2f3b69]">
+                        <h2 className="text-[27px] font-black mt-2 leading-tight text-[#2f3b69]">
 
                             ما هي خدمة
                             <br />
@@ -431,7 +431,7 @@ export default function CertificateEquivalencyPage() {
 
 
 
-                        <h2 className="text-4xl font-black mt-3 text-[#0d2b5e]">
+                        <h2 className="text-[28px] font-black mt-3 text-[#0d2b5e]">
                             المستندات المطلوبة
                         </h2>
 
@@ -477,14 +477,14 @@ export default function CertificateEquivalencyPage() {
                         <img
                             src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
                             alt="Documents"
-                            className="rounded-[10px] shadow-2xl w-full h-[350px] object-cover"
+                            className="rounded-[10px] shadow-2xl w-full h-[330px] object-cover"
                         />
 
-                        <div className="absolute bottom-1 right-6 bg-white rounded-[10px] shadow-xl px-3 py-2">
+                        <div className="absolute -bottom-5 -right-3 bg-[#2f3b69] rounded-[10px] shadow-xl px-3 py-2">
 
 
 
-                            <p className="text-gray-600 mt-2">
+                            <p className="text-[#ffffff] mt-2">
                                 متابعة لجميع الملفات
                             </p>
 
@@ -505,7 +505,7 @@ export default function CertificateEquivalencyPage() {
                             خطوات التقديم
                         </span>
 
-                        <h2 className="text-4xl font-bold mt-3">
+                        <h2 className="text-[27px] text-[#154734] font-bold mt-3">
                             خطوات معادلة الشهادة
                         </h2>
 
@@ -524,7 +524,7 @@ export default function CertificateEquivalencyPage() {
                             >
 
                                 {/* صورة */}
-                                <div className="relative h-40">
+                                <div className="relative h-36">
 
                                     <img
                                         src={step.image}
@@ -550,9 +550,9 @@ export default function CertificateEquivalencyPage() {
                                 </div>
 
                                 {/* المحتوى */}
-                                <div className="pt-8 pb-5 px-3 text-center">
+                                <div className="pt-8 pb-4 px-2 text-center">
 
-                                    <h3 className="text-[19px] font-bold text-[#2f3b69] mb-3">
+                                    <h3 className="text-[15px] font-bold text-[#2f3b69] mb-2">
                                         {step.title}
                                     </h3>
 
