@@ -16,7 +16,7 @@ import ScholarshipApplication from "./pages/ScholarshipApplication";
 import CertificateServices from "./pages/CertificateServices";
 import StudyAbroad from "./pages/StudyAbroad";
 import StudyCountry from "./pages/StudyCountry";
-
+import ScholarshipService from "./pages/ScholarshipService";
 export default function App() {
   return (
     <BrowserRouter>
@@ -52,6 +52,10 @@ export default function App() {
 <Route
   path="/services/certificateservices"
   element={<CertificateServices />}
+/>
+<Route
+  path="/scholarship-service"
+  element={<ScholarshipService />}
 />
 
         <Route

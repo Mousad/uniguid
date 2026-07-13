@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../pilden/logo.jpg";
+import baoh from "../pilden/baoh.jpeg";
 const stories = [
   {
     year: "2022",
     title: "تأسيس UniGuide",
     description:
       "بدأت رحلة UniGuide في عام 2022 بفكرة إنشاء منصة عربية تساعد الطلاب على الوصول إلى أفضل الجامعات والمنح الدراسية حول العالم، من خلال تقديم معلومات موثوقة وخدمات تعليمية متكاملة في مكان واحد.",
-    image: logo,
+    image: baoh,
   },
   {
     year: "2023",

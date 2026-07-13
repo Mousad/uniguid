@@ -1,10 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../pilden/logo.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faYoutube, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +18,38 @@ export function Header() {
   const [openMobileSubDropdown, setOpenMobileSubDropdown] = useState(null);
   const [openDesktopDropdown, setOpenDesktopDropdown] = useState(null);
 
+  // مرجع للقائمة المنسدلة
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+
+  // تغيير لون الهيدر عند النزول
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  // إغلاق القائمة عند الضغط خارجها
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setOpenDesktopDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  
 
   const navLinks = [
     { label: "الرئيسية", to: "/" },
@@ -25,10 +57,23 @@ export function Header() {
       label: "الخدمات",
       to: "/services",
       dropdown: [
+       
+     
+       
+        {
+  label: "المنح",
+  to: "/scholarship-service",
+},
         { label: "خدماتنا", to: "/services" },
-     { label: "الدراسة في الخارج", to: "/study-abroad" },
-       { label: "تقديم", to: "/scholarship-application" },
-        { label: "استخرج شهادات ", to: "/services/certificateservices" },
+       { label: "الامتياز", to: "/services/medical" },
+       { label: "استخرج شهادات ", to: "/services/certificateservices" },
+        { label: "إستشارات دراسية ", to: "/services/Consultation" },
+       { label: "الدراسة في الخارج", to: "/study-abroad" },
+       { label: "معادلة الدرجات العلمية", to: "/scholarship-application" },
+       
+       { label: "الكورسات و التدريب", to: "/services/Courses" },
+      
+       { label: "خدمات اخرى", to: "/" },
       ],
     },
     { label: "الجامعات", to: "/universities/1" },
