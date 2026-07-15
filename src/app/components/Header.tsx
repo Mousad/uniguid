@@ -114,15 +114,27 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-4">
             {navLinks.map((link) =>
               link.dropdown ? (
-                <div
-                  key={link.label}
-                  className="relative"
-                  onMouseEnter={() => setOpenDesktopDropdown(link.label)}
-                  onMouseLeave={() => setOpenDesktopDropdown(null)}
-                >
-                  <span className="px-4 py-2 rounded-lg text-gray-700 relative text-sm font-semibold hover:text-[#0d2b5e] flex items-center gap-1 cursor-pointer">
-                    {link.label} <ChevronDown size={16} />
-                  </span>
+               <div
+  key={link.label}
+  className="relative"
+  ref={dropdownRef}
+>
+                  <button
+  onClick={() =>
+    setOpenDesktopDropdown(
+      openDesktopDropdown === link.label ? null : link.label
+    )
+  }
+  className="px-4 py-2 rounded-lg text-gray-700 text-sm font-semibold hover:text-[#0d2b5e] flex items-center gap-1"
+>
+  {link.label}
+  <ChevronDown
+    size={16}
+    className={`transition-transform duration-300 ${
+      openDesktopDropdown === link.label ? "rotate-180" : ""
+    }`}
+  />
+</button>
                   {openDesktopDropdown === link.label && (
                     <div className="absolute top-full left-0 mt-2 w-60 bg-white shadow-lg rounded-lg overflow-hidden z-50">
                       {link.dropdown.map((item) => (

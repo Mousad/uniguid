@@ -1,7 +1,7 @@
 import { Video, Clock, Users, CheckCircle } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
-
+import { Link } from "react-router-dom";
 const benefits = [
   "استشارة شخصية مع مستشار أكاديمي متخصص",
   "تقييم مؤهلاتك وتحديد الخيارات المناسبة",
@@ -13,13 +13,13 @@ export function ConsultationCTA() {
   return (
     <section
       id="consultation"
-      className="py-20 px-4 relative overflow-hidden bg-[#f2f9f5]"
+      className="py-20 px-4 relative overflow-hidden bg-[#ffffff]"
       
     >
       {/* Decorative Elements */}
       <div
         className="absolute top-0 left-0 w-80 h-80 rounded-full opacity-10"
-        style={{ background: "radial-gradient(circle, #f1f8f4, transparent)", transform: "translate(-30%, -30%)" }}
+        style={{ background: "radial-gradient(circle, #ffffff, transparent)", transform: "translate(-30%, -30%)" }}
       />
       <div
         className="absolute bottom-0 right-0 w-96 h-96 rounded-full opacity-10"
@@ -69,19 +69,17 @@ export function ConsultationCTA() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               
-              <a
-                href="https://wa.me/905001234567"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold text-lg transition-all hover:scale-105"
-                style={{
-                  backgroundColor: "#0d2b5e",
-                  color: "white",
-                  border: "2px solid #0d2b5e",
-                }}
-              >
-                          <FontAwesomeIcon icon={faWhatsapp} />
-                
-                
-              </a>
+              <Link
+  to="/services/Consultation"
+  className="inline-flex items-center gap-2 px-5 py-1 rounded-[10px] font-bold text-lg transition-all hover:scale-105"
+  style={{
+    backgroundColor: "#0d2b5e",
+    color: "white",
+    border: "2px solid #0d2b5e",
+  }}
+>
+   استشارة مجانية
+</Link>
             </div>
           </div>
 

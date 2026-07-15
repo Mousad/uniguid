@@ -246,7 +246,7 @@ export function HomePage() {
 </section>
       
       <ChatBot />
-      <AboutSection />
+      {/* <AboutSection /> */}
    
       <ConsultationCTA />
       {/* <TeamSection /> */}
