@@ -115,73 +115,171 @@ export function TestimonialsSection() {
   const t = testimonials[current];
 
   return (
-    <section id="testimonials" className="py-9 px-4 bg-[#ffffff] overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-14">
-          <span
-            className="inline-block px-5 py-2 rounded-full text-sm font-bold mb-4"
-            style={{ backgroundColor: "#c0392b15", color: "#154734" }}
-          >
-            آراء طلابنا
-          </span>
-          <h2 className="text-4xl font-black text-[#0d2b5e] mb-4">شهادات الطلاب</h2>
-          <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-            اقرأ ما يقوله طلابنا عن تجربتهم مع منصة UniGuide التعليمية
-          </p>
-          <div className="w-20 h-1 rounded-full mx-auto mt-5" style={{ backgroundColor: "#154734" }} />
-        </div>
+  <section id="testimonials" className="py-24 bg-[#f8fafc] overflow-hidden">
 
-        {/* Main Testimonial */}
-        <div className="relative max-w-4xl mx-auto">
-          <div
-            className={`transition-all duration-300 ${isAnim ? "opacity-0 translate-x-4" : "opacity-100 translate-x-0"}`}
-          >
-            <div
-              className="relative p-8 md:p-12 rounded-3xl shadow-xl"
-              style={{
-                background: "linear-gradient(135deg, # 0%, #1e5799 100%)",
-              }}
-            >
-              {/* Quote Icon */}
-            
+  <div className="max-w-7xl mx-auto px-4">
 
-              <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
-                {/* Avatar */}
-                <div className="flex-shrink-0">
-                  <div className="relative">
-                    <img
-                      src={t.image}
-                      alt={t.name}
-                      className="w-88 h-74 rounded-2xl object-cover border-4 border-white/20"
-                    />
-                   
-                  </div>
-                </div>
+    {/* Header */}
 
-                {/* Content */}
-                <div className="flex-1">
-                  {/* Stars */}
-                  
+    <div className="text-center mb-16">
 
-                  <p className="text-[#1e5799] text-lg leading-relaxed mb-6 italic">
-                    "{t.text}"
-                  </p>
+      <span className="text-[#154734] font-semibold">
+        آراء الطلاب
+      </span>
 
-                  <div>
-                    <p className="text-[#1e5799] font-black text-xl">{t.name}</p>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <h2 className="text-4xl font-black mt-3">
+        قصص نجاح طلاب UniGuide
+      </h2>
 
-         
-        </div>
+      <p className="text-gray-600 mt-5 max-w-3xl mx-auto leading-8">
+        نفتخر بمساعدة مئات الطلاب في الوصول إلى أهدافهم الأكاديمية
+        واستكمال رحلتهم التعليمية داخل وخارج الوطن.
+      </p>
 
-       
+    </div>
+
+    <div
+      className="
+      flex
+      lg:grid lg:grid-cols-3
+      md:grid md:grid-cols-2
+      gap-8
+      overflow-x-auto
+      lg:overflow-visible
+      snap-x snap-mandatory
+      scrollbar-hide
+      pb-4
+    "
+    >
+
+     {testimonials.map((review, index) => (
+
+  <div
+    key={index}
+    className="
+      min-w-[92%]
+      sm:min-w-[70%]
+      lg:min-w-0
+      snap-center
+      bg-white
+      rounded-[30px]
+      border
+      border-gray-100
+      shadow-md
+      hover:shadow-2xl
+      hover:-translate-y-2
+      transition-all
+      duration-300
+      p-7
+    "
+  >
+
+    {/* User */}
+
+    <div className="flex items-center gap-4 mb-6">
+
+      <img
+        src={review.image}
+        alt={review.name}
+        className="w-16 h-16 rounded-full object-cover border-2 border-[#154734]"
+      />
+
+      <div>
+
+        <h3 className="font-bold text-lg text-[#154734]">
+          {review.name}
+        </h3>
+
+        <p className="text-gray-500 text-sm">
+          {review.country}
+        </p>
+
       </div>
-    </section>
+
+    </div>
+
+    {/* Review */}
+
+    <p className="text-gray-600 leading-8 text-[15px]">
+
+      "{review.text}"
+
+    </p>
+
+    {/* معلومات الطالب */}
+
+    <div className="mt-6 space-y-2">
+
+      <div className="flex items-center justify-between">
+
+        <span className="text-gray-500 text-sm">
+          الجامعة
+        </span>
+
+        <span className="font-semibold text-[#154734]">
+          {review.university}
+        </span>
+
+      </div>
+
+      <div className="flex items-center justify-between">
+
+        <span className="text-gray-500 text-sm">
+          التخصص
+        </span>
+
+        <span className="font-semibold">
+          {review.major}
+        </span>
+
+      </div>
+
+      <div className="flex items-center justify-between">
+
+        <span className="text-gray-500 text-sm">
+          سنة القبول
+        </span>
+
+        <span className="font-semibold">
+          {review.year}
+        </span>
+
+      </div>
+
+    </div>
+
+    {/* Footer */}
+
+    <div className="flex items-center justify-between mt-8 pt-5 border-t">
+
+      <div className="flex gap-1">
+
+        {[...Array(review.rating)].map((_, i) => (
+
+          <Star
+            key={i}
+            size={18}
+            className="fill-yellow-400 text-yellow-400"
+          />
+
+        ))}
+
+      </div>
+
+      <span className="text-sm text-[#154734] font-semibold">
+        طالب موثق ✓
+      </span>
+
+    </div>
+
+  </div>
+
+))}
+
+    </div>
+
+  </div>
+
+</section>
   );
 }

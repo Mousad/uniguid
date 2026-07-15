@@ -22,7 +22,7 @@ export const services = [
 
  {
   id: 2,
-  title: "الامتياز الطبي",
+  title: "الامتياز ",
   description:
     "التقديم لبرامج الامتياز الطبي والدراسات العليا للأطباء داخل أفضل الجامعات.",
   image:
@@ -33,8 +33,19 @@ export const services = [
   link: "/services/medical",
 },
 
+{
+  id: 3,
+  title: "معادلة ",
+  description: "معادلة واعتماد الشهادات داخل مصر والإمارات.",
+  image: "...",
+  icon: GraduationCap,
+  color: "bg-blue-700",
+  button: "عرض الخدمة",
+  link: "/services/bquivalency",
+},
+
  {
-  id: 5,
+  id: 4,
   title: "معادلة الشهادات",
   description:
     "خدمات معادلة الشهادات المصرية والإماراتية وإنهاء جميع الإجراءات الرسمية بسهولة.",
@@ -47,7 +58,7 @@ export const services = [
 },
 
   {
-  id: 4,
+  id: 5,
   title: "استخراج الشهادات",
   description:
     "استخراج الشهادات الدراسية والتوثيقات الرسمية بسرعة واحترافية.",
@@ -63,7 +74,7 @@ export const services = [
 
   
   {
-    id: 5,
+    id: 6,
     title: " استشارات دراسية",
     description:
       "كل الخدمات التي يحتاجها الطالب من استشارات تعليمية  تسهل دليل الطالب ويفهم اكتر .",
@@ -75,7 +86,7 @@ export const services = [
     link: "/services/Consultation",
   },
   {
-    id: 5,
+    id: 7,
     title: "  كورسات ودورات",
     description:
       "كل الخدمات التي يحتاجها الطالب من استشارات تعليمية  تسهل دليل الطالب ويفهم اكتر .",
