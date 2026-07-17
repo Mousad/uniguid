@@ -40,7 +40,7 @@ export default function ScholarshipApplication() {
               <option value="">اختر الخدمة</option>
 
               <option value="scholarship">
-                التقديم على منحة دراسية
+                التقديم  منحة دراسية
               </option>
 
               <option value="consultation">
@@ -52,11 +52,11 @@ export default function ScholarshipApplication() {
               </option>
 
               <option value="secondary">
-                استخراج شهادة الثانوية العامة
+                استخراج شهادة الثانوية 
               </option>
 
               <option value="basic">
-                استخراج شهادة الصف الثامن
+                استخراج شهادة  الثامن
               </option>
             </select>
           </div>
@@ -88,17 +88,9 @@ export default function ScholarshipApplication() {
                   className="border rounded-xl px-4 py-3"
                 />
 
-                <input
-                  type="text"
-                  placeholder="الجنسية"
-                  className="border rounded-xl px-4 py-3"
-                />
+               
 
-                <input
-                  type="text"
-                  placeholder="الدولة الحالية"
-                  className="border rounded-xl px-4 py-3"
-                />
+               
 
                 <input
                   type="date"
@@ -110,41 +102,184 @@ export default function ScholarshipApplication() {
           )}
 
           {/* المنحة */}
-          {service === "scholarship" && (
-            <>
-              <h2 className="text-2xl font-bold text-[#0d2b5e] mt-10 mb-6">
-                بيانات المنحة
-              </h2>
+        {service === "scholarship" && (
+  <>
+    <h2 className="text-2xl font-bold text-[#0d2b5e] mt-10 mb-6">
+      بيانات المنحة
+    </h2>
 
-              <div className="grid md:grid-cols-2 gap-5">
+    <div className="grid md:grid-cols-2 gap-5">
 
-                <input
-                  type="text"
-                  placeholder="الدولة المطلوبة"
-                  className="border rounded-xl px-4 py-3"
-                />
+      {/* الدولة */}
+      <select className="border rounded-xl px-4 py-3 bg-white">
+        <option value="">اختر الدولة</option>
 
-                <input
-                  type="text"
-                  placeholder="الجامعة المطلوبة"
-                  className="border rounded-xl px-4 py-3"
-                />
+        <option>مصر</option>
+        <option>السعودية</option>
+        <option>الإمارات العربية المتحدة</option>
+        <option>قطر</option>
+        <option>الكويت</option>
+        <option>البحرين</option>
+        <option>سلطنة عُمان</option>
+        <option>الأردن</option>
+        <option>لبنان</option>
+        <option>سوريا</option>
+        <option>العراق</option>
+        <option>فلسطين</option>
+        <option>السودان</option>
+        <option>ليبيا</option>
+        <option>تونس</option>
+        <option>الجزائر</option>
+        <option>المغرب</option>
+        <option>موريتانيا</option>
+        <option>جيبوتي</option>
+        <option>الصومال</option>
+        <option>جزر القمر</option>
+        <option>اليمن</option>
+      </select>
 
-                <input
-                  type="text"
-                  placeholder="التخصص"
-                  className="border rounded-xl px-4 py-3"
-                />
+       <select className="border rounded-xl px-4 py-3 bg-white">
+  <option value="">اختر التخصص</option>
 
-                <select className="border rounded-xl px-4 py-3">
-                  <option>بكالوريوس</option>
-                  <option>ماجستير</option>
-                  <option>دكتوراه</option>
-                </select>
+  {/* الطب والعلوم الصحية */}
+  <optgroup label=" الطب والعلوم الصحية">
+    <option>الطب البشري</option>
+    <option>طب الأسنان</option>
+    <option>الصيدلة</option>
+    <option>التمريض</option>
+    <option>العلاج الطبيعي</option>
+    <option>المختبرات الطبية</option>
+    <option>الأشعة والتصوير الطبي</option>
+    <option>التغذية العلاجية</option>
+    <option>الصحة العامة</option>
+    <option>الطب البيطري</option>
+  </optgroup>
 
-              </div>
-            </>
-          )}
+  {/* الهندسة */}
+  <optgroup label=" الهندسة">
+    <option>الهندسة المدنية</option>
+    <option>الهندسة المعمارية</option>
+    <option>الهندسة الكهربائية</option>
+    <option>الهندسة الميكانيكية</option>
+    <option>هندسة الحاسوب</option>
+    <option>الهندسة الإلكترونية</option>
+    <option>الهندسة الصناعية</option>
+    <option>الهندسة الكيميائية</option>
+    <option>هندسة البترول</option>
+    <option>الهندسة الزراعية</option>
+    <option>الهندسة الطبية الحيوية</option>
+  </optgroup>
+
+  {/* الحاسوب والتقنية */}
+  <optgroup label=" الحاسوب والتقنية">
+    <option>علوم الحاسوب</option>
+    <option>تقنية المعلومات</option>
+    <option>الذكاء الاصطناعي</option>
+    <option>الأمن السيبراني</option>
+    <option>علوم البيانات</option>
+    <option>هندسة البرمجيات</option>
+    <option>الشبكات</option>
+    <option>تطوير التطبيقات</option>
+    <option>الحوسبة السحابية</option>
+  </optgroup>
+
+  {/* إدارة الأعمال */}
+  <optgroup label=" إدارة الأعمال">
+    <option>إدارة الأعمال</option>
+    <option>المحاسبة</option>
+    <option>المالية</option>
+    <option>الاقتصاد</option>
+    <option>التسويق</option>
+    <option>الموارد البشرية</option>
+    <option>إدارة المشاريع</option>
+    <option>إدارة سلاسل الإمداد</option>
+    <option>ريادة الأعمال</option>
+  </optgroup>
+
+  {/* القانون والعلوم الإنسانية */}
+  <optgroup label=" القانون والعلوم الإنسانية">
+    <option>القانون</option>
+    <option>العلوم السياسية</option>
+    <option>العلاقات الدولية</option>
+    <option>علم النفس</option>
+    <option>علم الاجتماع</option>
+    <option>الإعلام</option>
+    <option>الصحافة</option>
+    <option>الترجمة</option>
+    <option>اللغة العربية</option>
+    <option>اللغة الإنجليزية</option>
+  </optgroup>
+
+  {/* التربية */}
+  <optgroup label=" التربية">
+    <option>التربية</option>
+    <option>التربية الخاصة</option>
+    <option>رياض الأطفال</option>
+    <option>المناهج وطرق التدريس</option>
+  </optgroup>
+
+  {/* العلوم */}
+  <optgroup label=" العلوم">
+    <option>الكيمياء</option>
+    <option>الفيزياء</option>
+    <option>الأحياء</option>
+    <option>الرياضيات</option>
+    <option>الإحصاء</option>
+    <option>علوم البيئة</option>
+    <option>الجيولوجيا</option>
+  </optgroup>
+
+  {/* الزراعة */}
+  <optgroup label=" الزراعة">
+    <option>الزراعة</option>
+    <option>الإنتاج الحيواني</option>
+    <option>الإنتاج النباتي</option>
+    <option>علوم الأغذية</option>
+  </optgroup>
+
+  {/* الفنون */}
+  <optgroup label=" الفنون والتصميم">
+    <option>التصميم الجرافيكي</option>
+    <option>التصميم الداخلي</option>
+    <option>الفنون الجميلة</option>
+    <option>تصميم الأزياء</option>
+    <option>الرسوم المتحركة</option>
+  </optgroup>
+
+  {/* أخرى */}
+  <optgroup label=" تخصصات أخرى">
+    <option>الطيران</option>
+    <option>السياحة والفندقة</option>
+    <option>العلوم البحرية</option>
+    <option>الآثار</option>
+    <option>الفلسفة</option>
+    <option>أخرى</option>
+  </optgroup>
+</select>
+
+     
+
+    
+
+
+      {/* الدرجة */}
+      <select className="border rounded-xl px-4 py-3 bg-white">
+        <option value="">اختر الدرجة العلمية</option>
+        <option>دبلوم</option>
+        <option>بكالوريوس</option>
+        <option>ماجستير</option>
+        <option>دكتوراه</option>
+      </select>
+       {/* الجامعة */}
+      <input
+        type="text"
+        placeholder="الجامعة المطلوبة"
+        className="border rounded-xl px-4 py-3"
+      />
+
+    </div>
+  </>
+)}
 
           {/* الاستشارة */}
           {service === "consultation" && (
@@ -166,32 +301,93 @@ export default function ScholarshipApplication() {
             service === "secondary" ||
             service === "basic") && (
             <>
-              <h2 className="text-2xl font-bold text-[#0d2b5e] mt-10 mb-6">
-                بيانات الشهادة
-              </h2>
+  <h2 className="text-2xl font-bold text-[#0d2b5e] mt-10 mb-6">
+    بيانات الشهادة
+  </h2>
 
-              <div className="grid md:grid-cols-2 gap-5">
+  <div className="grid md:grid-cols-2 gap-5">
 
-                <input
-                  type="text"
-                  placeholder="اسم المؤسسة التعليمية"
-                  className="border rounded-xl px-4 py-3"
-                />
+    <input
+      type="text"
+      placeholder="اسم المؤسسة "
+      className="border rounded-xl px-4 py-3"
+    />
 
-                <input
-                  type="text"
-                  placeholder="سنة التخرج"
-                  className="border rounded-xl px-4 py-3"
-                />
+    <input
+      type="text"
+      placeholder="سنة التخرج"
+      className="border rounded-xl px-4 py-3"
+    />
 
-                <input
-                  type="text"
-                  placeholder="رقم الجلوس أو الرقم الجامعي"
-                  className="border rounded-xl px-4 py-3"
-                />
+    <input
+      type="text"
+      placeholder="رقم الجلوس أو الرقم الجامعي"
+      className="border rounded-xl px-4 py-3"
+    />
 
-              </div>
-            </>
+    {/* ولاية التخرج */}
+   {/* الجنسية */}
+<select
+  className="border rounded-xl px-4 py-3 bg-white"
+  defaultValue=""
+>
+  <option value="" disabled>
+    اختر الجنسية
+  </option>
+
+  <option>🇸🇩 سوداني</option>
+  <option>🇪🇬 مصري</option>
+  <option>🇸🇦 سعودي</option>
+  <option>🇦🇪 إماراتي</option>
+  <option>🇶🇦 قطري</option>
+  <option>🇰🇼 كويتي</option>
+  <option>🇧🇭 بحريني</option>
+  <option>🇴🇲 عُماني</option>
+  <option>🇯🇴 أردني</option>
+  <option>🇮🇶 عراقي</option>
+  <option>🇵🇸 فلسطيني</option>
+  <option>🇸🇾 سوري</option>
+  <option>🇱🇧 لبناني</option>
+  <option>🇾🇪 يمني</option>
+  <option>🇱🇾 ليبي</option>
+  <option>🇹🇳 تونسي</option>
+  <option>🇩🇿 جزائري</option>
+  <option>🇲🇦 مغربي</option>
+  <option>🌍 أخرى</option>
+</select>
+
+{/* دولة الإقامة الحالية */}
+<select
+  className="border rounded-xl px-4 py-3 bg-white"
+  defaultValue=""
+>
+  <option value="" disabled>
+    اختر دولة الإقامة الحالية
+  </option>
+
+  <option>🇸🇩 السودان</option>
+  <option>🇪🇬 مصر</option>
+  <option>🇸🇦 السعودية</option>
+  <option>🇦🇪 الإمارات</option>
+  <option>🇶🇦 قطر</option>
+  <option>🇰🇼 الكويت</option>
+  <option>🇧🇭 البحرين</option>
+  <option>🇴🇲 سلطنة عُمان</option>
+  <option>🇯🇴 الأردن</option>
+  <option>🇮🇶 العراق</option>
+  <option>🇵🇸 فلسطين</option>
+  <option>🇸🇾 سوريا</option>
+  <option>🇱🇧 لبنان</option>
+  <option>🇾🇪 اليمن</option>
+  <option>🇱🇾 ليبيا</option>
+  <option>🇹🇳 تونس</option>
+  <option>🇩🇿 الجزائر</option>
+  <option>🇲🇦 المغرب</option>
+  <option>🌍 دولة أخرى</option>
+</select>
+
+  </div>
+</>
           )}
 
           {/* رفع الملفات */}
@@ -226,9 +422,9 @@ export default function ScholarshipApplication() {
 
           {/* زر الإرسال */}
           {service && (
-            <button className="mt-10 w-full bg-[#154734] hover:bg-[#0d2b5e] text-white py-4 rounded-xl font-bold flex justify-center items-center gap-3 transition">
+            <button className="mt-10 w-full bg-[#0d2b5e] hover:bg-[#0d2b5e] text-white py-3 rounded-xl font-bold flex justify-center items-center gap-3 transition">
               <Send size={20} />
-              إرسال الطلب
+              إرسال 
             </button>
           )}
 

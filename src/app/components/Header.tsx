@@ -77,6 +77,7 @@ export function Header() {
       ],
     },
     { label: "الجامعات", to: "/universities/1" },
+    { label: "تقديم", to: "/scholarship-application" },
     { label: "من نحن", to: "/about" },
     
   
