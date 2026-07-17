@@ -69,7 +69,7 @@ export function Header() {
        { label: "استخرج شهادات ", to: "/services/certificateservices" },
         { label: "إستشارات دراسية ", to: "/services/Consultation" },
        { label: "الدراسة في الخارج", to: "/study-abroad" },
-       { label: "معادلة الدرجات العلمية", to: "/scholarship-application" },
+       { label: "معادلة الدرجات العلمية", to: "/services/bquivalency" },
        
        { label: "الكورسات و التدريب", to: "/services/Courses" },
       

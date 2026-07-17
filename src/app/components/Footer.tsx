@@ -1,5 +1,7 @@
 import { Mail, Phone, MapPin, ArrowLeft, Heart } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import { Code2 } from "lucide-react";
 import { faFacebook, faInstagram, faYoutube, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 const footerLinks = {
   "روابط سريعة": [
@@ -34,7 +36,7 @@ export function Footer() {
           className="flex-1 p-3 text-black outline-none"
         />
 
-        <button className="bg-[#154734] px-4 text-white">
+        <button className="bg-[#2f3b69] px-4 text-white">
           إرسال
         </button>
       </form>
@@ -52,36 +54,60 @@ export function Footer() {
       </p>
 
       <ul className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-300">
-        <li><a href="#">الجامعات</a></li>
-        <li><a href="#">المدارس الدولية</a></li>
-        <li><a href="#">المدونة</a></li>
-        <li><a href="#">الاستوديو</a></li>
-        <li><a href="#">انضم إلينا</a></li>
+       <li>
+  <Link to="/services">خدماتنا</Link>
+</li>
+
+<li>
+  <Link to="/scholarship-service">المنح الدراسية</Link>
+</li>
+
+<li>
+  <Link to="/universities/1">الجامعات</Link>
+</li>
+
+<li>
+  <Link to="/ContactSection">تواصل معنا</Link>
+</li>
+        <li>
+  <a
+    href="https://wa.me/201501096007"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    انضم إلينا
+  </a>
+</li>
       </ul>
     </div>
 
 
     {/* links */}
-    <div className="text-center md:text-right">
-      <h3 className="text-lg font-semibold mb-6">روابط مهمة</h3>
+   <div className="text-center md:text-right">
+  <h3 className="text-lg font-semibold mb-6">
+    روابط مهمة
+  </h3>
 
-      <div className="grid grid-cols-2 gap-3 text-gray-300 text-sm">
+  <div className="grid grid-cols-2 gap-3 text-gray-300 text-sm">
 
-        <a href="#">الدراسة في مصر</a>
-        <a href="#">اللغة العربية</a>
+    <Link to="/study-abroad">الدراسة بالخارج</Link>
 
-        <a href="#">السكن الطلابي</a>
-        <a href="#">الخدمات</a>
+    <Link to="/scholarship-service">المنح الدراسية</Link>
 
-        <a href="#">تواصل معنا</a>
-        <a href="#">من نحن</a>
+    <Link to="/services/medical">الامتياز الطبي</Link>
 
-        <a href="#">أهم التخصصات</a>
-        <a href="#">المنح الدراسية</a>
+    <Link to="/services/bquivalency">معادلة الشهادات</Link>
 
-      </div>
-    </div>
+    <Link to="/services/certificateservices">الترجمة والتصديقات</Link>
 
+    <Link to="/services/Courses">الكورسات والتدريب</Link>
+
+    <Link to="/about">من نحن</Link>
+
+    <Link to="/ContactSection">تواصل معنا</Link>
+
+  </div>
+</div>
 
    
 
@@ -89,9 +115,23 @@ export function Footer() {
 
 
   {/* bottom */}
-  <div className="border-t border-gray-600 mt-10 pt-4 text-center text-gray-400 text-sm">
-    © {new Date().getFullYear()} UniGuide — جميع الحقوق محفوظة
-  </div>
+ <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
+
+  <p>
+    © {new Date().getFullYear()} UniGuide. جميع الحقوق محفوظة.
+  </p>
+
+  <a
+    href="https://soob-portfolio.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-1 text-[#ffdf20] hover:text-white transition"
+  >
+    <Code2 size={20} />
+    <span className="text-[#f8fafc]"> Soo249</span>
+  </a>
+
+</div>
 </footer>
     
   );
