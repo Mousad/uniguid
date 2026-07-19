@@ -115,20 +115,20 @@ export function TestimonialsSection() {
   const t = testimonials[current];
 
   return (
-  <section id="testimonials" className="py-24 bg-[#f8fafc] overflow-hidden">
+  <section id="testimonials" className="py-17 bg-[#f8fafc] overflow-hidden">
 
-  <div className="max-w-7xl mx-auto px-4">
+  <div className="max-w-5xl mx-auto px-2">
 
     {/* Header */}
 
-    <div className="text-center mb-16">
+    <div className="text-center mb-10">
 
       <span className="text-[#154734] font-semibold">
         آراء الطلاب
       </span>
 
-      <h2 className="text-4xl font-black mt-3">
-        قصص نجاح طلاب UniGuide
+      <h2 className="text-3xl font-black mt-3">
+        قصص نجاح طلاب <span className="text-[#ffdf20]">UniGuide</span> 
       </h2>
 
       <p className="text-gray-600 mt-5 max-w-3xl mx-auto leading-8">
@@ -143,7 +143,7 @@ export function TestimonialsSection() {
       flex
       lg:grid lg:grid-cols-3
       md:grid md:grid-cols-2
-      gap-8
+      gap-5
       overflow-x-auto
       lg:overflow-visible
       snap-x snap-mandatory
@@ -162,7 +162,7 @@ export function TestimonialsSection() {
       lg:min-w-0
       snap-center
       bg-white
-      rounded-[30px]
+      rounded-[10px]
       border
       border-gray-100
       shadow-md
@@ -170,13 +170,13 @@ export function TestimonialsSection() {
       hover:-translate-y-2
       transition-all
       duration-300
-      p-7
+      p-5
     "
   >
 
     {/* User */}
 
-    <div className="flex items-center gap-4 mb-6">
+    <div className="flex items-center gap-3 mb-3">
 
       <img
         src={review.image}
@@ -234,17 +234,7 @@ export function TestimonialsSection() {
 
       </div>
 
-      <div className="flex items-center justify-between">
-
-        <span className="text-gray-500 text-sm">
-          سنة القبول
-        </span>
-
-        <span className="font-semibold">
-          {review.year}
-        </span>
-
-      </div>
+     
 
     </div>
 

@@ -73,41 +73,16 @@ egypt: {
       cover: "https://arabsstudents.com/blogs/175855260748Jy2UeA2L",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd0qpL7NfYKJHiz5zoXqxoqAN6xLVk70cWueNGIPYnvQ&s=10",
     },
-    {
-      name: "جامعة أسيوط",
-      cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
-      logo: "https://upload.wikimedia.org/wikipedia/ar/5/5f/Assiut_University_logo.png",
-    },
-    {
-      name: "جامعة الزقازيق",
-      cover: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
-      logo: "https://upload.wikimedia.org/wikipedia/ar/5/5a/Zagazig_University_logo.png",
-    },
-    {
-      name: "جامعة طنطا",
-      cover: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900",
-      logo: "https://upload.wikimedia.org/wikipedia/ar/2/28/Tanta_University_logo.png",
-    },
-    {
-      name: "جامعة المستقبل",
-      cover: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=900",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwUuF1bGQgBpyXZffWEDozMeGi2cOcJo-9SSSIGyLYuoeMkpd491sy7M&s=10",
-    },
+  
+   
+   
     {
       name: "جامعة بدر",
       cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
       logo: "https://upload.wikimedia.org/wikipedia/ar/7/76/Badr_University_logo.png",
     },
-    {
-      name: "الجامعة البريطانية",
-      cover: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=900",
-      logo: "https://upload.wikimedia.org/wikipedia/en/9/9b/British_University_in_Egypt_logo.png",
-    },
-    {
-      name: "الجامعة الألمانية",
-      cover: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
-      logo: "https://upload.wikimedia.org/wikipedia/en/0/0e/GUC_Logo.png",
-    },
+   
+    
     {
       name: "جامعة مصر للعلوم والتكنولوجيا",
       cover: "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
@@ -818,6 +793,145 @@ india: {
       question: "هل يمكن للطلاب الدوليين التقديم؟",
       answer:
         "نعم، تستقبل الجامعات الهندية طلابًا دوليين من مختلف الجنسيات.",
+    },
+  ],
+},
+rwanda: {
+  slug: "rwanda",
+
+  name: "الدراسة في رواندا",
+
+  heroImage:
+    "https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?w=1600",
+
+  overview:
+    "تُعد رواندا من أسرع الدول الإفريقية نموًا في قطاع التعليم، حيث توفر جامعات حديثة وبرامج أكاديمية باللغة الإنجليزية، مع بيئة آمنة وتكاليف دراسة ومعيشة مناسبة للطلاب الدوليين.",
+
+  whyStudy:
+    "تتميز رواندا بالاستقرار والأمان، والجامعات الحديثة، والتعليم باللغة الإنجليزية، ورسوم دراسية مناسبة، وانخفاض تكاليف المعيشة، بالإضافة إلى اهتمام الحكومة بتطوير التعليم والبحث العلمي، مما يجعلها وجهة مميزة للطلاب الدوليين.",
+
+  universities: [
+    {
+      name: "University of Rwanda",
+      cover:
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/en/7/72/University_of_Rwanda_logo.png",
+    },
+    {
+      name: "Kigali Independent University (ULK)",
+      cover:
+        "https://images.unsplash.com/photo-1562774053-701939374585?w=900",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/commons/8/86/ULK_Logo.png",
+    },
+    {
+      name: "Adventist University of Central Africa (AUCA)",
+      cover:
+        "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=900",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/en/f/f5/Adventist_University_of_Central_Africa_logo.png",
+    },
+    {
+      name: "Carnegie Mellon University Africa",
+      cover:
+        "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/commons/4/45/Carnegie_Mellon_University_wordmark.svg",
+    },
+    {
+      name: "Mount Kenya University Rwanda",
+      cover:
+        "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=900",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/en/6/68/Mount_Kenya_University_logo.png",
+    },
+    {
+      name: "Institute of Applied Sciences Ruhengeri (INES)",
+      cover:
+        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900",
+      logo:
+        "https://upload.wikimedia.org/wikipedia/commons/5/59/INES_Ruhengeri_logo.png",
+    },
+  ],
+
+  majors: [
+    "الطب البشري",
+    "طب الأسنان",
+    "الصيدلة",
+    "التمريض",
+    "المختبرات الطبية",
+    "الهندسة المدنية",
+    "الهندسة الكهربائية",
+    "الهندسة الميكانيكية",
+    "علوم الحاسب",
+    "هندسة البرمجيات",
+    "الذكاء الاصطناعي",
+    "الأمن السيبراني",
+    "علوم البيانات",
+    "إدارة الأعمال",
+    "المحاسبة",
+    "الاقتصاد",
+    "التمويل",
+    "التسويق",
+    "القانون",
+    "الإعلام",
+    "الزراعة",
+    "التربية",
+  ],
+
+  requirements: [
+    "جواز سفر ساري المفعول",
+    "الشهادة الدراسية",
+    "كشف الدرجات",
+    "صور شخصية",
+    "شهادة الميلاد",
+    "أي مستندات إضافية تطلبها الجامعة",
+  ],
+
+  grades:
+    "تختلف معدلات القبول حسب الجامعة والتخصص، ويتم تقييم كل طلب وفقاً للشهادة الدراسية والبرنامج المطلوب.",
+
+  tuition:
+    "تعتبر الرسوم الدراسية في رواندا منخفضة مقارنة بالعديد من الدول، وتختلف حسب الجامعة والتخصص والمرحلة الدراسية.",
+
+  visa:
+    "بعد الحصول على القبول الجامعي يتم استخراج التأشيرة الدراسية الرواندية واستكمال إجراءات السفر والإقامة.",
+
+  livingCost:
+    "تكاليف المعيشة في رواندا مناسبة للطلاب الدوليين، وتشمل السكن والطعام والمواصلات بأسعار معقولة مقارنة بالعديد من الدول.",
+
+  steps: [
+    "اختيار الجامعة",
+    "اختيار التخصص",
+    "تجهيز المستندات",
+    "التقديم على الجامعة",
+    "الحصول على القبول",
+    "التقديم على التأشيرة",
+    "السفر إلى رواندا",
+    "بدء الدراسة",
+  ],
+
+  faq: [
+    {
+      question: "هل الدراسة في رواندا باللغة الإنجليزية؟",
+      answer:
+        "نعم، تعتمد معظم الجامعات الرواندية اللغة الإنجليزية كلغة أساسية للتدريس.",
+    },
+    {
+      question: "هل الجامعات الرواندية معترف بها؟",
+      answer:
+        "توجد جامعات معترف بها دولياً، ويعتمد الاعتراف على الجامعة والتخصص والدولة التي ترغب في معادلة الشهادة بها.",
+    },
+    {
+      question: "هل تكاليف الدراسة مناسبة؟",
+      answer:
+        "نعم، تعتبر رواندا من الدول ذات الرسوم الدراسية وتكاليف المعيشة المناسبة للطلاب الدوليين.",
+    },
+    {
+      question: "هل يمكن للطلاب الدوليين التقديم؟",
+      answer:
+        "نعم، تستقبل الجامعات الرواندية آلاف الطلاب الدوليين سنوياً من مختلف الدول.",
     },
   ],
 },

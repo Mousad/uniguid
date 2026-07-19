@@ -174,7 +174,7 @@ export function ContactSection() {
                   type="submit"
                   disabled={loading}
                   className="w-full py-4 rounded-2xl text-white font-bold text-lg flex items-center justify-center gap-3 transition-all hover:shadow-xl hover:scale-[1.02] disabled:opacity-70"
-                  style={{ backgroundColor: "#154734" }}
+                  style={{ backgroundColor: "#0d2b5e" }}
                 >
                   {loading ? (
                     <>

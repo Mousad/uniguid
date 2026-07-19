@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CertificateEquivalencyPage from "./pages/CertificateEquivalencyPage";
 import { Header } from "./components/Header";
+import { scholarships } from "../../data/scholarships";
+import ScholarshipDetail from "./pages/ScholarshipDetail";
 import { Footer } from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import MedicalInternshipPage from "./pages/MedicalInternshipPage";
@@ -61,6 +63,11 @@ export default function App() {
 <Route
   path="/services/bquivalency"
   element={<CertificateBquivalencyPage />}
+/>
+
+<Route
+  path="/scholarships/:slug"
+  element={<ScholarshipDetail />}
 />
 
         <Route

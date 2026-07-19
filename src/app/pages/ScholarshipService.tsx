@@ -6,7 +6,7 @@ export default function ScholarshipService() {
 
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-[#ffffff] min-h-screen">
 
       {/* Hero Section */}
      <section
@@ -27,12 +27,12 @@ export default function ScholarshipService() {
            منح دراسية حول العالم
         </span>
 
-        <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
+        <h1 className="text-3xl lg:text-5xl font-extrabold leading-tight">
           ابدأ رحلتك الدراسية مع
           <span className="text-yellow-300"> UniGuide </span>
         </h1>
 
-        <p className="mt-6 text-lg leading-9 text-gray-100">
+        <p className="mt-4 text-[14px] leading-7 text-gray-100">
           نقدم خدمات التقديم على المنح الدراسية والقبولات الجامعية
           في أفضل الجامعات العالمية، مع متابعة كاملة حتى الحصول
           على القبول والتأشيرة.
@@ -42,14 +42,14 @@ export default function ScholarshipService() {
 
           <Link
             to="/scholarship-application"
-            className="bg-yellow-400 hover:bg-yellow-500 text-[#0d2b5e] px-8 py-3 rounded-xl font-bold transition-all duration-300"
+            className="bg-yellow-400 hover:bg-yellow-500 text-[#0d2b5e] px-8 py-1 rounded-[10px] font-bold transition-all duration-300"
           >
             قدم الآن
           </Link>
 
           <Link
             to="/contactSection"
-            className="border-2 border-white hover:bg-white hover:text-[#0d2b5e] px-8 py-3 rounded-xl font-bold transition-all duration-300"
+            className="border-2 border-white hover:bg-white hover:text-[#0d2b5e] px-8 py-1 rounded-[10px] font-bold transition-all duration-300"
           >
             استشارة مجانية
           </Link>
@@ -61,16 +61,16 @@ export default function ScholarshipService() {
       {/* Card */}
       <div className="flex justify-center">
 
-        <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-full max-w-md">
+        <div className="bg-white/95 backdrop-blur-lg rounded-[10px] shadow-2xl p-4 w-full max-w-md">
 
           <div className="flex items-center gap-3 mb-8">
 
             <GraduationCap
-              size={45}
+              size={40}
               className="text-[#0d2b5e]"
             />
 
-            <h2 className="text-3xl font-bold text-[#0d2b5e]">
+            <h2 className="text-[23px] font-bold text-[#0d2b5e]">
               لماذا UniGuide؟
             </h2>
 
@@ -81,7 +81,7 @@ export default function ScholarshipService() {
             <div className="flex items-center gap-4">
 
               <Globe
-                size={28}
+                size={22}
                 className="text-green-600"
               />
 
@@ -94,7 +94,7 @@ export default function ScholarshipService() {
             <div className="flex items-center gap-4">
 
               <GraduationCap
-                size={28}
+                size={22}
                 className="text-blue-600"
               />
 
@@ -107,7 +107,7 @@ export default function ScholarshipService() {
             <div className="flex items-center gap-4">
 
               <ArrowLeft
-                size={28}
+                size={22}
                 className="text-orange-500"
               />
 
@@ -131,11 +131,11 @@ export default function ScholarshipService() {
       
       {/* ================= الدول ================= */}
 
-<section className="py-20 bg-white">
+<section className="py-15 bg-[#ffffff]">
   <div className="max-w-7xl mx-auto px-3">
 
     <div className="text-center mb-2">
-      <h2 className="text-4xl font-bold text-[#0d2b5e]">
+      <h2 className="text-3xl font-bold text-[#0d2b5e]">
         اختر وجهتك الدراسية
       </h2>
 
@@ -192,18 +192,18 @@ export default function ScholarshipService() {
 
         <div
           key={item.country}
-          className="bg-white rounded-[10px] border border-gray-200 hover:border-[#0d2b5e] hover:shadow-xl transition duration-300 p-5 text-center group"
+          className="bg-white rounded-[10px] border border-gray-200 hover:border-[#f9fafb] hover:shadow-xl transition duration-300 p-2 text-center group"
         >
 
-          <div className="text-[37px] mb-3">
+          <div className="text-[30px] mb-2">
             {item.flag}
           </div>
 
-          <h3 className="text-[20px] font-bold text-[#0d2b5e]">
+          <h3 className="text-[17px] font-bold text-[#0d2b5e]">
             {item.country}
           </h3>
 
-          <p className="text-gray-600 mt-2 leading-7">
+          <p className="text-gray-600 text-[14px] mt-2 leading-7">
             {item.desc}
           </p>
 
@@ -216,212 +216,153 @@ export default function ScholarshipService() {
 
   </div>
 </section>
-{/* ================= الدول ================= */}
-
-
-
-{/* ================= أنواع المنح ================= */}
 
 <section className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-14">
-      <h2 className="text-4xl font-bold text-[#0d2b5e]">
-        أنواع المنح التي نوفرها
+      <span className="text-primary font-semibold">
+        المنح الدراسية
+      </span>
+
+      <h2 className="text-4xl font-bold text-[#0d2b5e] mt-3">
+        المنح الحكومية المتاحة لعام 2026
       </h2>
 
-      <p className="text-gray-600 mt-4">
-        اختر نوع المنحة أو البرنامج الذي يناسب مستقبلك الأكاديمي.
+      <p className="text-gray-600 mt-5 max-w-3xl mx-auto leading-8">
+        اختر المنحة المناسبة لك، واطلع على جميع الشروط والمميزات
+        والأوراق المطلوبة ثم قدم طلبك إلكترونيًا.
       </p>
     </div>
 
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+    <div className="grid lg:grid-cols-2 gap-8">
 
-      {[
-        {
-          title: "منح البكالوريوس",
-          icon: "🎓",
-          desc: "للطلاب الراغبين في بدء الدراسة الجامعية."
-        },
-        {
-          title: "منح الماجستير",
-          icon: "📚",
-          desc: "لإكمال الدراسات العليا في أفضل الجامعات."
-        },
-        {
-          title: "منح الدكتوراه",
-          icon: "👨‍🎓",
-          desc: "للباحثين الراغبين في الحصول على درجة الدكتوراه."
-        },
-        {
-          title: "المنح الممولة بالكامل",
-          icon: "💰",
-          desc: "تشمل الرسوم الدراسية والسكن والمعيشة."
-        },
-        {
-          title: "المنح الجزئية",
-          icon: "🏫",
-          desc: "تغطي جزءاً من الرسوم الدراسية."
-        },
-        {
-          title: "دورات اللغة",
-          icon: "🌍",
-          desc: "برامج لتعلم اللغة الإنجليزية والتركية والصينية وغيرها."
-        }
-      ].map((item) => (
+      {/* العراق */}
+
+      <Link
+        to="/scholarships/iraq-2026"
+        className="group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border"
+      >
 
         <div
-          key={item.title}
-          className="bg-gray-50 rounded-2xl p-8 border hover:border-[#0d2b5e] hover:shadow-xl transition duration-300"
+          className="h-64 bg-cover bg-center relative"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200')",
+          }}
         >
 
-          <div className="text-6xl mb-6">
-            {item.icon}
+          <div className="absolute inset-0 bg-[#0d2b5e]/60" />
+
+          <div className="absolute top-6 right-6 bg-white px-4 py-2 rounded-full font-bold text-[#0d2b5e]">
+            🇮🇶 العراق
           </div>
 
-          <h3 className="text-2xl font-bold text-[#0d2b5e] mb-4">
-            {item.title}
+        </div>
+
+        <div className="p-8">
+
+          <h3 className="text-3xl font-bold text-[#0d2b5e]">
+            منحة الحكومة العراقية 2026
           </h3>
 
-          <p className="text-gray-600 leading-8">
-            {item.desc}
+          <p className="text-gray-600 leading-8 mt-5">
+            منحة ممولة بالكامل تشمل البكالوريوس والماجستير والدكتوراه
+            في جميع التخصصات، بما فيها الطب والهندسة والصيدلة.
           </p>
 
-          <button
-            className="mt-6 bg-[#0d2b5e] hover:bg-[#17468c] text-white px-6 py-3 rounded-xl transition"
-          >
-            التقديم الآن
+          <div className="flex flex-wrap gap-3 mt-6">
+
+            <span className="bg-green-100 text-green-700 px-3 py-2 rounded-full text-sm">
+              ممولة بالكامل
+            </span>
+
+            <span className="bg-blue-100 text-blue-700 px-3 py-2 rounded-full text-sm">
+              جميع التخصصات
+            </span>
+
+            <span className="bg-yellow-100 text-yellow-700 px-3 py-2 rounded-full text-sm">
+              3 رغبات
+            </span>
+
+          </div>
+
+          <button className="mt-8 w-full bg-[#0d2b5e] text-white py-4 rounded-xl font-bold hover:bg-[#17468c] transition">
+            عرض التفاصيل والتقديم
           </button>
 
         </div>
 
-      ))}
+      </Link>
 
-    </div>
+      {/* مصر */}
 
-  </div>
-</section>
-
-{/* ================= لماذا UniGuide ================= */}
-
-<section className="py-24 bg-[#0d2b5e] text-white">
-  <div className="max-w-7xl mx-auto px-6">
-
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold">
-        لماذا تختار UniGuide؟
-      </h2>
-
-      <p className="mt-4 text-gray-200 max-w-3xl mx-auto">
-        نحن لا نقدم مجرد خدمة تقديم، بل نرافقك في جميع مراحل رحلتك
-        الدراسية حتى تبدأ دراستك في الجامعة.
-      </p>
-    </div>
-
-    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-
-      {[
-        {
-          icon:"🎓",
-          number:"+500",
-          title:"طالب تم قبوله"
-        },
-        {
-          icon:"🌍",
-          number:"+20",
-          title:"دولة للدراسة"
-        },
-        {
-          icon:"🏛️",
-          number:"+150",
-          title:"جامعة شريكة"
-        },
-        {
-          icon:"⭐",
-          number:"98%",
-          title:"رضا العملاء"
-        }
-
-      ].map((item)=>(
+      <Link
+        to="/scholarships/egypt-2026"
+        className="group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 border"
+      >
 
         <div
-          key={item.title}
-          className="bg-white/10 rounded-3xl p-8 text-center backdrop-blur hover:bg-white/20 transition"
+          className="h-64 bg-cover bg-center relative"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=1200')",
+          }}
         >
 
-          <div className="text-6xl mb-5">
-            {item.icon}
+          <div className="absolute inset-0 bg-[#0d2b5e]/60" />
+
+          <div className="absolute top-6 right-6 bg-white px-4 py-2 rounded-full font-bold text-[#0d2b5e]">
+            🇪🇬 مصر
           </div>
 
-          <h3 className="text-5xl font-black text-yellow-300">
-            {item.number}
+        </div>
+
+        <div className="p-8">
+
+          <h3 className="text-3xl font-bold text-[#0d2b5e]">
+            المنحة المصرية 2026
           </h3>
 
-          <p className="mt-4 text-lg">
-            {item.title}
+          <p className="text-gray-600 leading-8 mt-5">
+            منحة حكومية للطلاب الدوليين في الجامعات المصرية مع رسوم
+            دراسية مجانية وفرص في التخصصات الطبية والهندسية والأدبية.
           </p>
 
-        </div>
+          <div className="flex flex-wrap gap-3 mt-6">
 
-      ))}
+            <span className="bg-green-100 text-green-700 px-3 py-2 rounded-full text-sm">
+              حكومية
+            </span>
 
-    </div>
+            <span className="bg-blue-100 text-blue-700 px-3 py-2 rounded-full text-sm">
+              بدون IELTS
+            </span>
 
-    <div className="mt-20 grid lg:grid-cols-2 gap-10">
+            <span className="bg-yellow-100 text-yellow-700 px-3 py-2 rounded-full text-sm">
+              رسوم مجانية
+            </span>
 
-      <div className="bg-white rounded-3xl p-10 text-gray-800">
+          </div>
 
-        <h3 className="text-3xl font-bold text-[#0d2b5e] mb-6">
-          ماذا نقدم؟
-        </h3>
-
-        <ul className="space-y-5">
-
-          <li>✅ اختيار الجامعة المناسبة.</li>
-
-          <li>✅ مراجعة جميع المستندات.</li>
-
-          <li>✅ التقديم على المنح والجامعات.</li>
-
-          <li>✅ متابعة القبول الجامعي.</li>
-
-          <li>✅ استخراج التأشيرة.</li>
-
-          <li>✅ متابعة الطالب حتى السفر.</li>
-
-        </ul>
-
-      </div>
-
-      <div className="bg-yellow-400 rounded-3xl p-10">
-
-        <h3 className="text-3xl font-bold text-[#0d2b5e] mb-6">
-          مميزاتنا
-        </h3>
-
-        <div className="space-y-6 text-[#0d2b5e] font-semibold">
-
-          <div>✔ خبرة في التقديم للجامعات العالمية.</div>
-
-          <div>✔ فريق متخصص في المنح الدراسية.</div>
-
-          <div>✔ متابعة مستمرة حتى الحصول على القبول.</div>
-
-          <div>✔ سرعة في إنجاز الطلبات.</div>
-
-          <div>✔ دعم عبر واتساب طوال فترة التقديم.</div>
+          <button className="mt-8 w-full bg-[#0d2b5e] text-white py-4 rounded-xl font-bold hover:bg-[#17468c] transition">
+            عرض التفاصيل والتقديم
+          </button>
 
         </div>
 
-      </div>
+      </Link>
 
     </div>
 
   </div>
 </section>
+
+
+
 {/* ================= خطوات التقديم ================= */}
 
-<section className="py-24 bg-gray-50">
+<section className="py-16 bg-[#ffffff]">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-16">
@@ -500,86 +441,12 @@ export default function ScholarshipService() {
   </div>
 </section>
 
-{/* ================= المستندات المطلوبة ================= */}
 
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
 
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-[#0d2b5e]">
-        المستندات المطلوبة
-      </h2>
-
-      <p className="text-gray-600 mt-4">
-        تأكد من تجهيز المستندات التالية قبل بدء عملية التقديم.
-      </p>
-    </div>
-
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-
-      {[
-        {
-          icon: "🛂",
-          title: "جواز السفر",
-          desc: "نسخة واضحة وسارية المفعول."
-        },
-        {
-          icon: "🎓",
-          title: "الشهادة الدراسية",
-          desc: "آخر مؤهل دراسي حصلت عليه."
-        },
-        {
-          icon: "📄",
-          title: "كشف الدرجات",
-          desc: "السجل الأكاديمي أو كشف الدرجات."
-        },
-        {
-          icon: "📸",
-          title: "صورة شخصية",
-          desc: "بخلفية بيضاء وحديثة."
-        },
-        {
-          icon: "📝",
-          title: "السيرة الذاتية",
-          desc: "يفضل أن تكون باللغة الإنجليزية."
-        },
-        {
-          icon: "🌐",
-          title: "شهادة لغة (اختياري)",
-          desc: "IELTS أو TOEFL إن وجدت."
-        }
-
-      ].map((item) => (
-
-        <div
-          key={item.title}
-          className="bg-gray-50 rounded-3xl p-8 text-center hover:shadow-xl border hover:border-[#0d2b5e] transition"
-        >
-
-          <div className="text-6xl mb-6">
-            {item.icon}
-          </div>
-
-          <h3 className="text-2xl font-bold text-[#0d2b5e]">
-            {item.title}
-          </h3>
-
-          <p className="text-gray-600 mt-4 leading-8">
-            {item.desc}
-          </p>
-
-        </div>
-
-      ))}
-
-    </div>
-
-  </div>
-</section>
 
 {/* ================= قصص النجاح ================= */}
 
-<section className="py-24 bg-gray-50">
+<section className="py-16 bg-[#ffffff]">
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center mb-16">
@@ -671,7 +538,7 @@ export default function ScholarshipService() {
  
    {/* ================= FAQ ================= */}
 
-<section className="py-24 bg-white">
+<section className="py-16 bg-[#ffffff]">
   <div className="max-w-5xl mx-auto px-6">
 
     <div className="text-center mb-14">
